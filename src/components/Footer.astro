@@ -1,10 +1,19 @@
 ---
-const platform = "github";
-const username = "natrok";
+import Social from "./Social.astro";
 ---
 
+<style>
+    footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+        background-color: rgb(206, 206, 229);
+        justify-content: center;
+    }
+</style>
+
 <footer>
-    <p>
-        Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!
-    </p>
+    <Social platform="twitter" username="astrodotbuild" />
+    <Social platform="github" username="withastro" />
+    <Social platform="youtube" username="astrodotbuild" />
 </footer>
