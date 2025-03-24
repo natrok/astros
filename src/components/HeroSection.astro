@@ -1,4 +1,6 @@
 ---
+import LadyLogo from "../assets/logoLady.png";
+
 interface Props {
   title: string;
   highlightText?: string;
@@ -26,8 +28,11 @@ if (highlightText) {
     <div class="absolute inset-0 bg-grid-pattern"></div>
   </div>
   
-  <div class="container-custom relative z-10">
-    <div class="text-center max-w-3xl mx-auto px-4">
+  <div class="flex container-custom relative z-10">
+    <div class="flex-1 logo">
+      <img src={LadyLogo.src} alt="Logo">
+    </div>
+    <div class="flex-2 text-center max-w-3xl mx-auto px-4">
       <h1 class="text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-6 text-gray-900 dark:text-white animate-slide-down">
         {highlightText ? (
           <>
@@ -40,6 +45,9 @@ if (highlightText) {
       <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6 md:mb-8 animate-slide-up" style="animation-delay: 200ms">
         {description}
       </p>
+      <button
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full shadow-md"
+      >Reserva tu Clase de Prueba Gratis</button>
     </div>
   </div>
   
@@ -48,3 +56,29 @@ if (highlightText) {
     <div class="w-48 md:w-64 h-48 md:h-64 bg-accent-400 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
   </div>
 </section> 
+<style>
+  .section-container {
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      padding: 20px;
+      border: 1px solid #ccc; 
+      max-width: 800px;
+      margin: auto;
+  }
+  
+  .logo {
+      flex: 1; 
+      max-width: 250px; 
+  }
+  
+  .logo img {
+      width: 100%; 
+      height: auto;
+  }
+
+  .text {
+      flex: 2; 
+      padding-left: 20px;
+  }
+</style>
