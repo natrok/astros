@@ -1,0 +1,33 @@
+---
+
+const razones = [
+  { text: "Clases Adaptadas a Ti", description: "Cada estudiante es único, por eso adapto mis clases según tu nivel, objetivos y ritmo de aprendizaje. Desde principiantes hasta avanzados, encontrarás un programa diseñado para tus necesidades." },
+  { text: "Profesora Certificada", description: "Con más de cuatro años de experiencia enseñando español a francófonos, te garantizo un aprendizaje eficaz. ¡Mis métodos están comprobados!" },
+  { text: "Flexibilidad y Comodidad", description: "Aprende desde donde quieras y cuando quieras con clases en línea. Tú eliges el horario que mejor te convenga." },
+  { text: "Recursos Exclusivos", description: "Acceso a materiales didácticos como guías, ejercicios, podcasts y más para complementar tus clases y mejorar tu aprendizaje" },
+]; 
+
+const motivationTitle = "¿Por qué elegir Español con Lady?";
+
+const buttonText = "Reserva tu Clase de Prueba Gratis";
+const path = '/contact';
+
+import ActionButton from "./ActionButton.astro";
+
+---
+<section class="section">
+    <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-16 mt-0">
+            <h2 class="mb-6 text-gray-900 dark:text-white">{motivationTitle}</h2>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {razones.map(razon => (
+                <div  class="card p-4 border border-gray-200 dark:border-gray-700 slide-up" >
+                        <h3 class="font-semibold mb-4 text-gray-900 dark:text-white">{razon.text}</h3>
+                        <p class="text-gray-600 dark:text-gray-300">{razon.description}</p>
+                </div>
+            ))}
+        </div>
+    </div>
+    <ActionButton text={buttonText} url={path} />
+</section>

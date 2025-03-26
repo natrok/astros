@@ -29,8 +29,8 @@ if (highlightText) {
     <div class="absolute inset-0 bg-grid-pattern"></div>
   </div>
   
-  <div class="flex container-custom relative z-10">
-    <div class="flex-1 logo">
+  <div class="flex container-custom relative">
+    <div class="flex-1 logo mx-auto px-1">
       <img src={LadyLogo.src} alt="Logo">
     </div>
     <div class="flex-2 text-center max-w-3xl mx-auto px-4">
@@ -47,17 +47,11 @@ if (highlightText) {
         {description}
       </p>
       
-      {currentPath != "/contact" &&
-        <div class="mt-16 text-center">
-          <a href="/contact" class="btn-primary">
+      {currentPath != "/contact" &&   
+        <a href="/contact" class="btn-secondary">
             Reserva tu Clase de Prueba Gratis
           </a>
-        </div>
       }
-
-      <!-- <button
-        class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full shadow-md"
-      >Reserva tu Clase de Prueba Gratis</button> -->
     </div>
   </div>
   
@@ -77,18 +71,18 @@ if (highlightText) {
       margin: auto;
   }
   
-  .logo {
-      flex: 1; 
+  .logo {      
       max-width: 250px; 
   }
   
   .logo img {
+      display: flex;
+      justify-content: center;
       width: 100%; 
       height: auto;
   }
 
   .text {
-      flex: 2; 
-      padding-left: 20px;
+      padding-left: 10px;
   }
 </style>
