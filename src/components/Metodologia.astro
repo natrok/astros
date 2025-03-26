@@ -23,16 +23,16 @@ const features = [
 
 const metodologiaTitle = "¿Cómo funcionan las clases?";
 ---
-<section id="features" class="section bg-gray-50 dark:bg-gray-200/50">
-    <div class="container-custom">
-      <div class="text-center max-w-3xl mx-auto mb-16">
+<section id="features" class="section bg-gray-50 dark:bg-gray-200/50 mt-0">
+    <div class="container-custom ">
+      <div class="text-center max-w-3xl mx-auto mb-16 ">
        <h2 class="mb-6 text-gray-900 dark:text-white">{metodologiaTitle}</h2>
       </div>
       
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map((beneficios, index) => (
           <div 
-            class="card p-6 border border-gray-200 dark:border-gray-700 slide-up" 
+            class="card p-6 border border-blue-200 dark:border-blue-700 slide-up" 
             style={`animation-delay: ${index * 100}ms`}
           >
             <div class={`w-12 h-12 rounded-lg bg-${beneficios.color}-100 dark:bg-${beneficios.color}-900/30 flex items-center justify-center mb-6`}>

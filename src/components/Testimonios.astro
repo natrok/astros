@@ -1,0 +1,82 @@
+---
+const testimonials = [
+  {
+    content: "The best! She is the best tutor I have had in Spanish! She is great, very didactic and very patient with her students! She always has fun activities to do, you will never get bored with her! Highly recommended! :)",
+    author: "David",
+    From: "Preply.com",
+    avatar: "https://avatars.preply.com/i/logos/i/logos/1f47cc2f-412d-4fbd-ad5c-be53ee164f7d"
+  },
+  {
+    content: "Super prof, très patiente et très bien organisée. Les cours sont efficaces et toujours très bien bienveillants",
+    author: "Aline",
+    From: "Preply.com",
+    avatar: "https://avatars.preply.com/i/logos/64ea5a1c-9f8f-400c-883d-1d98ed07fc2f.jpg"
+  },
+  {
+    content: "Lady is awesome, she tailors our classes to my needs, adapting them as we progress, and making them a lot of fun. She’s also a super friendly and interesting person to get to know; I always enjoy and learn a lot from our time together. I’d happily recommend her 😊",
+    author: "Seif",
+    From: "Preply.com",
+    avatar: "https://avatars.preply.com/i/logos/i/logos/b67c8162-7b3b-4a40-822e-0610d129e385.jpeg"
+  },
+
+];
+
+const testimonialSection =
+{
+    title: "Lo que dicen algunos de mis estudiantes",
+    description: "No te fíes solo de mis palabras. Esto es lo que mis estudiantes de todo el mundo opinan sobre su experiencia en mis clases como su profesora de español."   
+}
+
+---
+
+<section id="testimonials" class="section">
+  <div class="container-custom">
+    <div class="mt-0 text-center max-w-3xl mx-auto mb-16 ">
+      <h2 class="mb-6 text-gray-900 dark:text-white">{testimonialSection.title}</h2>
+      <p class="text-xl text-gray-600 dark:text-gray-300">{testimonialSection.description}       
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      {testimonials.map((testimonial, index) => (
+        <div 
+          class="card p-6 border border-blue-200 dark:border-blue-700 slide-up" 
+          style={`animation-delay: ${index * 150}ms`}
+        >
+
+          <div class="flex items-center mb-2">
+            <img 
+              src={testimonial.avatar} 
+              alt={testimonial.author} 
+              class="w-12 h-12 rounded-full mr-4 object-cover"
+              loading="lazy"
+            />
+            <div>
+              <p class="font-semibold text-gray-900 dark:text-white">{testimonial.author}</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400">{testimonial.From},</p>
+            </div>
+          </div>
+          <div class="mb-6">
+            {[...Array(5)].map(() => (
+              <svg class="w-5 h-5 inline-block text-warning-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+            ))}
+          </div>
+          <blockquote class="mb-6 text-gray-700 dark:text-gray-300 italic">"{testimonial.content}"</blockquote>
+          
+          
+        </div>
+      ))}
+    </div>
+
+     <!-- TODO: link to the testimonios page -->
+    <div class="mt-8 text-center mx-auto mb-16 ">
+        <a href="#"> 
+            <span class="hover:scale-125 hover:mix-blend-color-dodge duration-300  mx-auto text-center inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm">
+                ver mas..
+            </span>
+        </a>
+      </div>
+   </div>
+</section>
