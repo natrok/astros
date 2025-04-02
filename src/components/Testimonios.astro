@@ -18,7 +18,24 @@ const testimonials = [
     From: "Preply.com",
     avatar: "https://avatars.preply.com/i/logos/i/logos/b67c8162-7b3b-4a40-822e-0610d129e385.jpeg"
   },
-
+  {
+    content: "The best! She is the best tutor I have had in Spanish! She is great, very didactic and very patient with her students! She always has fun activities to do, you will never get bored with her! Highly recommended! :)",
+    author: "David",
+    From: "Preply.com",
+    avatar: "https://avatars.preply.com/i/logos/i/logos/1f47cc2f-412d-4fbd-ad5c-be53ee164f7d"
+  },
+  {
+    content: "Super prof, très patiente et très bien organisée. Les cours sont efficaces et toujours très bien bienveillants",
+    author: "Aline",
+    From: "Preply.com",
+    avatar: "https://avatars.preply.com/i/logos/64ea5a1c-9f8f-400c-883d-1d98ed07fc2f.jpg"
+  },
+  {
+    content: "Lady is awesome, she tailors our classes to my needs, adapting them as we progress, and making them a lot of fun. She’s also a super friendly and interesting person to get to know; I always enjoy and learn a lot from our time together. I’d happily recommend her 😊",
+    author: "Seif",
+    From: "Preply.com",
+    avatar: "https://avatars.preply.com/i/logos/i/logos/b67c8162-7b3b-4a40-822e-0610d129e385.jpeg"
+  },
 ];
 
 const testimonialSection =
@@ -37,7 +54,8 @@ const testimonialSection =
       </p>
     </div>
     
-    <div class="grid md:grid-cols-3 gap-8">
+    <div class="carousel">
+    <!-- <div class="grid md:grid-cols-3 gap-8"> -->
       {testimonials.map((testimonial, index) => (
         <div 
           class="card hover:scale-100 transition-transform duration-0 p-6 border border-blue-200 dark:border-blue-700 slide-up" 
@@ -71,12 +89,41 @@ const testimonialSection =
     </div>
 
      <!-- TODO: link to the testimonios page -->
-    <div class="mt-8 text-center mx-auto mb-16 ">
+    <!-- <div class="mt-8 text-center mx-auto mb-16 ">
         <a href="#"> 
             <span class="hover:scale-125 hover:mix-blend-color-dodge duration-300  mx-auto text-center inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm">
                 ver mas..
             </span>
         </a>
-      </div>
+      </div> -->
    </div>
 </section>
+<style>
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 480px;
+  }
+  
+  .card {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    background-color: azure;
+    /* flex: 1 0 auto;
+    width: 300px; /* Adjust the width as needed 
+    margin-right: 16px; /* Space between cards */
+    transition: 0.5s ease; 
+  }
+  
+  .card:hover {
+    width: 200px;
+    opacity: 1;
+    cursor: pointer;
+    filter: contrast(1.2);
+  }
+  
+  </style>
