@@ -1,10 +1,17 @@
 ---
 import "../styles/Carousel.css";
-// import Testimonios from "../components/Testimonios.astro";
+const cartas  = ['Carta A', 'Carta B', 'Carta C', 'Carta D', 'Carta E', 'Carta F'];
+//const texto = "Hola, soy un texto de prueba";
 ---
-<section id="testimonials" >
-<div class="container-custom">
-  <div x-data="carousel()" x-init="startAutoplay()" class="carousel-container relative w-full overflow-hidden">
+<section>
+<div id="testimonials" class="container-custom">
+  <!-- <div class="counter" x-data={`{ count: ${initialCount} }`}>
+    <button x-on:click="count--">-</button>
+    <pre x-text="count">{ initialCount }</pre>
+    <button x-on:click="count++">+</button>
+  </div> -->
+  <!-- <div x-data={`test({ texto: '${texto}' })`}></div> -->
+   <div x-data={`carousel(${JSON.stringify(cartas)})`} x-init="init()" class="carousel-container relative w-full overflow-hidden"> -->
     <!-- Contenedor del carrusel -->
     <div 
       class="flex transition-transform duration-700 ease-out"
@@ -37,3 +44,16 @@ import "../styles/Carousel.css";
   
 </section>
  <script>import "../scripts/carousel.js"</script> 
+ <style>
+	.counter {
+		display: grid;
+		font-size: 2em;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		margin-top: 2em;
+		place-items: center;
+	}
+
+	.counter-message {
+		text-align: center;
+	}
+</style>
