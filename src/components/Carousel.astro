@@ -1,6 +1,10 @@
 ---
 import "../styles/Carousel.css";
-const cartas  = ['Carta A', 'Carta B', 'Carta C', 'Carta D', 'Carta E', 'Carta F'];
+const testimonialSection =
+{
+    title: "Lo que dicen algunos de mis estudiantes",
+    description: "No te fíes solo de mis palabras. Esto es lo que mis estudiantes de todo el mundo opinan sobre su experiencia en mis clases como su profesora de español."   
+}
 const testimonials = [
   {
     content: "The best! She is the best tutor I have had in Spanish! She is great, very didactic and very patient with her students! She always has fun activities to do, you will never get bored with her! Highly recommended! :)",
@@ -47,54 +51,55 @@ const testimonials = [
 ];
 ---
 <section class="section">
+  <!-- Contenedor del carrusel duration-700 ease-out -->
+  <div class="text-center max-w-2xl mx-auto mb-16 mt-0">
+    <h2 class="mb-6 mx-4 text-gray-900 dark:text-white">{testimonialSection.title}</h2>
+    <p class="mb-2 mx-4 text-xl">{testimonialSection.description}  </p>
+  </div>
+
 <div id="testimonials" class="container-custom carousel" >
    <div x-data={`carousel(${JSON.stringify(testimonials)})`} x-init="startAutoplay()" class="carousel-container relative w-full overflow-hidden"> 
     <!-- Contenedor del carrusel duration-700 ease-out -->
-    <div 
-      class="flex transition-transform duration-400 ease-out" 
-      :style="'transform: translateX(-' + (index * 33.33) + '%)'"
-    >
-      <template x-for="(item, i) in items" :key="i">
+      <div 
+        class="flex transition-transform duration-400 ease-out" 
+        :style="'transform: translateX(-' + (index * 50) + '%)'"
+      >
+        <template x-for="(item, i) in items" :key="i">
+          <!-- <div class="w-1/3 px-2 flex-shrink-0 translate-x-full"> -->
+          <div class="w-1/2 px-1 flex-shrink-0 min-h-72 translate-x-2/4" >
+            <div class="card p-6 border border-gray-200 dark:border-gray-700" x-show="index == i" 
+            x-transition:enter="transition ease-out duration-1000" 
+            x-transition:enter-start="opacity-20 scale-50"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-50">  
 
-        <!-- <div class="w-1/3 px-2 flex-shrink-0 translate-x-full"> -->
-        <div class="w-1/3 px-2 flex-shrink-0 translate-x-full" >
-          <div class="card p-6 border border-gray-200 dark:border-gray-700" x-show="index == i" 
-          x-transition:enter="transition ease-out duration-1000" 
-          x-transition:enter-start="opacity-20 scale-50"
-          x-transition:enter-end="opacity-100 scale-100"
-          x-transition:leave="transition ease-in duration-300"
-          x-transition:leave-start="opacity-100 scale-100"
-          x-transition:leave-end="opacity-0 scale-50">  
-
-          <!-- <p class="text-lg font-semibold" x-text="item.author"></p>
-           -->
-           <div class="flex items-center mb-2">
-            <img x-bind:src="item.avatar" 
-              x-bind:alt="item.author"
-              class="w-12 h-12 rounded-full mr-4 object-cover"
-              loading="lazy"
-            />
-            <div>
-              <p class="font-semibold text-gray-900 dark:text-white" x-text= "item.author"></p>
-              <img :src="`https://flagcdn.com/${item.from}.svg`" style='width:2rem' ' :alt="`${item.country}`">
-              <!-- <p class="text-sm text-gray-500 dark:text-gray-400" x-text= "item.from"></p> -->
+            <!-- <p class="text-lg font-semibold" x-text="item.author"></p>
+            -->
+            <div class="flex items-center mb-2">
+              <img x-bind:src="item.avatar" 
+                x-bind:alt="item.author"
+                class="w-12 h-12 rounded-full mr-4 object-cover"
+                loading="lazy"
+              />
+              <div>
+                <p class="font-semibold text-gray-900 dark:text-white" x-text= "item.author"></p>
+                <img :src="`https://flagcdn.com/${item.from}.svg`" style='width:2rem' ' :alt="`${item.country}`">
+                <!-- <p class="text-sm text-gray-500 dark:text-gray-400" x-text= "item.from"></p> -->
+              </div>
             </div>
+            <div class="mb-6">
+              {[...Array(5)].map(() => (
+                <svg class="w-5 h-5 inline-block text-warning-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              ))}
+            </div>
+            <blockquote class="mb-6 text-gray-700 dark:text-gray-300 italic" x-text="item.content"></blockquote>
           </div>
-          <div class="mb-6">
-            {[...Array(5)].map(() => (
-              <svg class="w-5 h-5 inline-block text-warning-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-              </svg>
-            ))}
-          </div>
-          <blockquote class="mb-6 text-gray-700 dark:text-gray-300 italic" x-text="item.content"></blockquote>
-          
-          
-        </div>
-
-        </div>
-        </div>
-      </template>
+          </div>         
+        </template>
     </div>
 
     <!-- Botones de navegación -->
@@ -120,6 +125,6 @@ const testimonials = [
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 360px;
+    height: auto;
   }
 </style>

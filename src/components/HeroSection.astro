@@ -30,11 +30,11 @@ if (highlightText) {
   </div>
   
   <div class="flex container-custom relative">
-    <div class="flex-1 logo mx-auto px-1">
+    <div class="flex-1 logo m-auto pb-0">
       <img src={LadyLogo.src} alt="Logo">
     </div>
     <div class="flex-2 text-center max-w-3xl mx-auto px-4">
-      <h1 class="text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-6 text-gray-900 dark:text-white animate-slide-down">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl mt-2 mb-2 md:mb-6 text-gray-900 dark:text-white animate-slide-down">
         {highlightText ? (
           <>
             {titleStart}<span class="text-accent-500">{highlightText}</span>{titleEnd}
@@ -43,15 +43,15 @@ if (highlightText) {
           title
         )}
       </h1>
-      <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6 md:mb-8 animate-slide-up" style="animation-delay: 200ms">
+      <h2 class="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6 md:mb-8 animate-slide-up" style="animation-delay: 200ms">
         {description}
-      </p>
+      </h2>
       
-      {currentPath != "/contact" &&   
+      <!-- {currentPath != "/contact" &&   
         <a href="/contact" class="btn-secondary">
             Reserva tu Clase de Prueba Gratis
           </a>
-      }
+      } -->
     </div>
   </div>
   
@@ -61,7 +61,7 @@ if (highlightText) {
   </div>
 </section> 
 <style>
-  .section-container {
+  /* .section-container {
       display: flex; 
       align-items: center; 
       justify-content: space-between; 
@@ -69,7 +69,7 @@ if (highlightText) {
       border: 1px solid #ccc; 
       max-width: 800px;
       margin: auto;
-  }
+  } */
   
   .logo {      
       max-width: 250px; 
@@ -78,7 +78,7 @@ if (highlightText) {
   .logo img {
       display: flex;
       justify-content: center;
-      width: 100%; 
+      width: 190%; 
       height: auto;
   }
 
