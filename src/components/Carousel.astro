@@ -1,27 +1,98 @@
 ---
 import "../styles/Carousel.css";
 const cartas  = ['Carta A', 'Carta B', 'Carta C', 'Carta D', 'Carta E', 'Carta F'];
-//const texto = "Hola, soy un texto de prueba";
+const testimonials = [
+  {
+    content: "The best! She is the best tutor I have had in Spanish! She is great, very didactic and very patient with her students! She always has fun activities to do, you will never get bored with her! Highly recommended! :)",
+    author: "David",
+    from: "fr",
+    country: "Francia",
+    avatar: "https://avatars.preply.com/i/logos/i/logos/1f47cc2f-412d-4fbd-ad5c-be53ee164f7d"
+  },
+  {
+    content: "Lady Odilia is a great tutor, she's very nice and helps me practice my Spanish in a fun way. She has lots of helpful excercises and is very patient with me, teaches me grammar and vocabulary...",
+    author: "Shir",
+    from: "de",
+    country: "Alemania",
+    avatar: "https://avatars.preply.com/i/logos/f11e8b0f-765b-4157-bac7-e78601103fe4.jpg"
+  },
+  {
+    content: "Super prof, très patiente et très bien organisée. Les cours sont efficaces et toujours très bien bienveillants",
+    author: "Aline",
+    from: "fr",
+    country: "Francia",
+    avatar: "https://avatars.preply.com/i/logos/64ea5a1c-9f8f-400c-883d-1d98ed07fc2f.jpg"
+  },
+  {
+    content: "Lady is awesome, she tailors our classes to my needs, adapting them as we progress, and making them a lot of fun. She’s also a super friendly and interesting person to get to know; I always enjoy and learn a lot from our time together. I’d happily recommend her 😊",
+    author: "Seif",
+    from: "eg",
+    country: "Egipto",
+    avatar: "https://avatars.preply.com/i/logos/i/logos/b67c8162-7b3b-4a40-822e-0610d129e385.jpeg"
+  },
+  {
+    content: "She has been a wonderful tutor and has really helped me improve my Spanish over the past month. She is dedicated, creative and makes learning fun! Highly recommend to anyone",
+    author: "Anthony",
+    from: "us",
+    country: "Estados Unidos",
+    avatar: "https://avatars.preply.com/i/logos/64ea5a1c-9f8f-400c-883d-1d98ed07fc2f.jpg"
+  },
+  {
+    content: "Très à l'écoute, s'adapte à toi et à ton niveau, te propose différents cours (Jeux, réflexion, dialogues...) Toujours de bonne humeur et souriante. Je recommande fortement",
+    author: "pascal",
+    from: "fr",
+    country: "Francia",
+    avatar: "https://static.preply.com/images/avatar-placeholder.png"
+  },
+];
 ---
-<section>
-<div id="testimonials" class="container-custom">
-  <!-- <div class="counter" x-data={`{ count: ${initialCount} }`}>
-    <button x-on:click="count--">-</button>
-    <pre x-text="count">{ initialCount }</pre>
-    <button x-on:click="count++">+</button>
-  </div> -->
-  <!-- <div x-data={`test({ texto: '${texto}' })`}></div> -->
-   <div x-data={`carousel(${JSON.stringify(cartas)})`} x-init="init()" class="carousel-container relative w-full overflow-hidden"> -->
-    <!-- Contenedor del carrusel -->
+<section class="section">
+<div id="testimonials" class="container-custom carousel" >
+   <div x-data={`carousel(${JSON.stringify(testimonials)})`} x-init="startAutoplay()" class="carousel-container relative w-full overflow-hidden"> 
+    <!-- Contenedor del carrusel duration-700 ease-out -->
     <div 
-      class="flex transition-transform duration-700 ease-out"
+      class="flex transition-transform duration-400 ease-out" 
       :style="'transform: translateX(-' + (index * 33.33) + '%)'"
     >
       <template x-for="(item, i) in items" :key="i">
-        <div class="w-1/3 px-2 flex-shrink-0">
-          <div class="carousel-card"> 
-          <p class="text-lg font-semibold" x-text="item"></p>
+
+        <!-- <div class="w-1/3 px-2 flex-shrink-0 translate-x-full"> -->
+        <div class="w-1/3 px-2 flex-shrink-0 translate-x-full" >
+          <div class="card p-6 border border-gray-200 dark:border-gray-700" x-show="index == i" 
+          x-transition:enter="transition ease-out duration-1000" 
+          x-transition:enter-start="opacity-20 scale-50"
+          x-transition:enter-end="opacity-100 scale-100"
+          x-transition:leave="transition ease-in duration-300"
+          x-transition:leave-start="opacity-100 scale-100"
+          x-transition:leave-end="opacity-0 scale-50">  
+
+          <!-- <p class="text-lg font-semibold" x-text="item.author"></p>
+           -->
+           <div class="flex items-center mb-2">
+            <img x-bind:src="item.avatar" 
+              x-bind:alt="item.author"
+              class="w-12 h-12 rounded-full mr-4 object-cover"
+              loading="lazy"
+            />
+            <div>
+              <p class="font-semibold text-gray-900 dark:text-white" x-text= "item.author"></p>
+              <img :src="`https://flagcdn.com/${item.from}.svg`" style='width:2rem' ' :alt="`${item.country}`">
+              <!-- <p class="text-sm text-gray-500 dark:text-gray-400" x-text= "item.from"></p> -->
+            </div>
           </div>
+          <div class="mb-6">
+            {[...Array(5)].map(() => (
+              <svg class="w-5 h-5 inline-block text-warning-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+            ))}
+          </div>
+          <blockquote class="mb-6 text-gray-700 dark:text-gray-300 italic" x-text="item.content"></blockquote>
+          
+          
+        </div>
+
+        </div>
         </div>
       </template>
     </div>
@@ -45,15 +116,10 @@ const cartas  = ['Carta A', 'Carta B', 'Carta C', 'Carta D', 'Carta E', 'Carta F
 </section>
  <script>import "../scripts/carousel.js"</script> 
  <style>
-	.counter {
-		display: grid;
-		font-size: 2em;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
-		margin-top: 2em;
-		place-items: center;
-	}
-
-	.counter-message {
-		text-align: center;
-	}
+  .carousel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 360px;
+  }
 </style>

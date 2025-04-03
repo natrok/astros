@@ -16,18 +16,16 @@ function carousel(parametros) {
 
   return {     
     currentSlide: 0,
-    totalSlides: 4,
+    totalSlides: parametros.length,
     index: 0, 
-    items: [],
-    init() {
-      this.items = parametros;
-    },
+    items: parametros,
+    autoplay: false,
    
     next() { this.index = (this.index + 1) % this.totalSlides },      
     prev() { this.index = (this.index - 1 + this.totalSlides) % this.totalSlides },
 
     startAutoplay() {
-       //setInterval(() => this.next(), 3000);
+      // setInterval(() => this.next(), 5000);
       }
     };
 }

@@ -58,7 +58,7 @@
   }
   
   .card {
-    @apply bg-white dark:bg-secondary-900 rounded-xl hover:scale-110 shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-secondary-200 dark:border-secondary-800;
+    @apply bg-white dark:bg-secondary-900 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-secondary-200 dark:border-secondary-800;
   }
 }
 
