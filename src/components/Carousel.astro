@@ -61,17 +61,17 @@ const testimonials = [
    <div x-data={`carousel(${JSON.stringify(testimonials)})`} x-init="startAutoplay()" class="carousel-container relative w-full overflow-hidden"> 
     <!-- Contenedor del carrusel duration-700 ease-out -->
       <div 
-        class="flex transition-transform duration-400 ease-out" 
+        class="flex transition-transform duration-600 ease-out" 
         :style="'transform: translateX(-' + (index * 50) + '%)'"
       >
         <template x-for="(item, i) in items" :key="i">
           <!-- <div class="w-1/3 px-2 flex-shrink-0 translate-x-full"> -->
           <div class="w-1/2 px-1 flex-shrink-0 min-h-72 translate-x-2/4" >
             <div class="card p-6 border border-gray-200 dark:border-gray-700" x-show="index == i" 
-            x-transition:enter="transition ease-out duration-1000" 
+            x-transition:enter="transition ease-out duration-500" 
             x-transition:enter-start="opacity-20 scale-50"
             x-transition:enter-end="opacity-100 scale-100"
-            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave="transition ease-in duration-250"
             x-transition:leave-start="opacity-100 scale-100"
             x-transition:leave-end="opacity-0 scale-50">  
 
