@@ -1,18 +1,39 @@
 ---
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
-import HeroSection from "../components/HeroSection.astro";
-import Layout from "../layouts/Layout.astro";
+import BlogLayout from "../layouts/Layout.astro";
+import LadyImg from "../assets/acerca.png";
 
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+const buttonText = "Reserva tu Clase de Prueba Gratis";
+const path = '/contact';
+
+import ActionButton from "../components/ActionButton.astro";
+
+import '../styles/about.css';
+
+import * as greatPost from './../content/about.md';
+
+const { frontmatter } = greatPost;
 ---
-<Layout title="Integrations - Sassify">
-    <Header />
-    <main>
-      <HeroSection 
-        title="Integrations & API" 
-        highlightText="Integrations"
-        description="Connect Sassify with your favorite tools and services to streamline your workflow."
-      />
-    </main>
-    <Footer />
-</Layout>
+<BlogLayout title={frontmatter.title}>
+        <Header />
+        <section id="about" class="section max-w-7xl justify-center mx-auto">
+                <div class="card mb-6 mx-auto">
+                        <img src={LadyImg.src} alt="Logo" width="80%" height="auto" class="img-about rounded-e-sm" />
+                </div>
+
+               
+                <div class="container-custom mx-auto">
+
+                        <div class="card my-20 mx-20 px-40 py-10 rounded-lg shadow-lg bg-blue-50 dark:bg-gray-800">
+                                <greatPost.Content  />
+                        </div>
+                        
+                </div>
+           
+                <ActionButton text={buttonText} url={path} />
+        </section>
+        
+        <Footer />
+</BlogLayout>

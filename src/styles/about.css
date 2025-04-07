@@ -1,0 +1,31 @@
+/* 
+
+.card-about{
+    border: 2px solid #fafafa80;
+    height: auto;
+    width: 50rem ;
+    padding: 20px;
+    margin: 20 auto;
+     margin-left: 2rem;
+    margin-right: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
+} 
+*/
+.glass-effect{
+    background: #fafafa10;
+    backdrop-filter: blur(0.8rem);
+}
+
+.img-about{
+  animation: fadeIn 3s ease;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
