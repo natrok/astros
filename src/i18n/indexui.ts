@@ -13,7 +13,7 @@ export const header = {
         'nav.about': 'Sobre mí',
         'nav.reservation': 'Reservar',
         'nav.class': 'Clases Privadas',
-    'nav.faq': 'FAQ',
+        'nav.faq': 'FAQ',
         'contact': 'Contáctame',
       },
     en: {
@@ -31,7 +31,7 @@ export const header = {
         'nav.about': 'À propos',
         'nav.reservation': 'Réservation',
         'nav.class': 'Cours privés',
-      'nav.faq': 'FAQ',
+        'nav.faq': 'FAQ',
         'contact': 'Contactez-moi',
     },
   } as const;
