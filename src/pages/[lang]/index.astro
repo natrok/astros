@@ -1,0 +1,32 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import Hero from "../../components/Hero.astro";
+import Metodologia from "../../components/Metodologia.astro";
+import Motivacion from "../../components/Motivacion.astro";
+import Carousel from "../../components/Carousel.astro";
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: "es" } },
+    { params: { lang: "en" } },
+    { params: { lang: "fr" } },
+  ];
+}
+
+import {header, defaultLang} from "../../i18n/indexui";  //traducciones de la pagina de inicio
+const lang = (Astro.params.lang || defaultLang) ; // Get the language from the URL, default to 'es' if not found
+const translations = header[lang as keyof typeof header];
+export const defaultRedirect = "/";
+---
+<Layout Lang={lang} title={translations.title}>
+  <Header Lang={lang} />
+  <main>
+    <Hero />
+    <Metodologia />
+    <Motivacion />
+    <Carousel />
+  </main>
+  <Footer />
+</Layout>

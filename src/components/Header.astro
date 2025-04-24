@@ -2,20 +2,23 @@
 import ladyLogo from "../assets/logoLady.png";
 import Navigation from "./Navigation.astro";
 import NavigationMobile from "./NavigationMobile.astro";
+import {header, defaultLang} from "../i18n/indexui";  //traducciones de la pagina de inicio
 
 import "../styles/header.css";
 
 const title = "Español Con Lady";
+const lang = (Astro.params.lang || defaultLang) ; 
+const translations = header[lang as keyof typeof header];
 
 const headerPages = [
-  { text: "Home", url: "/" },
-  // { text: "Clases y Servicios", url: "/features" }, // Removed maybe for price page
-  // { text: "Recursos", url: "/integrations" },
-  { text: "Clases Particulares", url: "/features" },
-  { text: "Reservar", url: "/contact" },
-  { text: "Sobre Mi", url: "/about" },
-  { text: "FAQ", url: "/none" },
+  { text: translations["nav.home"], url: "/" },
+  { text: translations["nav.reservation"], url: "/contact " },
+  { text: translations["nav.class"], url: "/features" },
+  { text: translations["nav.about"], url: "/about" },
+  { text: translations["nav.faq"], url: "/none" },  
 ];
+
+const contact = translations["contact"];
 ---
 
 <header
@@ -73,7 +76,7 @@ const headerPages = [
       </button>
 
       <a href="/contact" class="hidden sm:inline-flex btn-primary"
-        >Contactame</a
+        >{contact}</a
       >
 
       <NavigationMobile menuItems={headerPages} />

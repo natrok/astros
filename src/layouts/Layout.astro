@@ -6,17 +6,19 @@ import { ViewTransitions } from 'astro:transitions';
 
 export interface Props {
   title: string;
+  Lang: string;
   description?: string;
 }
 
 const { 
-  title, 
+  title,
+  Lang = 'es',   
   description = "Landing page Español con Lady - Aprende Español de Forma Divertida y Eficaz"
 } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" x-data="{ darkMode: localStorage.getItem('darkMode') === 'true' }" x-init="$watch('darkMode', val => localStorage.setItem('darkMode', val))" :class="{ 'dark': darkMode }">
+<html lang={Lang} x-data="{ darkMode: localStorage.getItem('darkMode') === 'true' }" x-init="$watch('darkMode', val => localStorage.setItem('darkMode', val))" :class="{ 'dark': darkMode }">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

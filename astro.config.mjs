@@ -8,5 +8,12 @@ export default defineConfig({
   integrations: [
     tailwind(),
     alpinejs()
-  ]
+  ],
+  i18n: {
+    defaultLocale: 'es',
+    locales: ['es', 'fr', 'en'],
+    routing: {
+      prefixDefaultLocale: false,      
+    },
+  },
 });
