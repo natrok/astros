@@ -22,26 +22,20 @@ const { frontmatter } = aboutp0;
 ---
 <BlogLayout title={frontmatter.title}>
         <Header />
+        <div class="container-custom">
+                <img src={LadyImg.src} alt="Logo" class="m-10 img-about rounded-e-sm " />
+        </div>
         <section id="about" class="section max-w-7xl justify-center mx-auto">
-                <div class="card mb-6 mx-auto">
-                        <img src={LadyImg.src} alt="Logo" width="80%" height="auto" class="img-about rounded-e-sm" />
-                </div>
-<!--                
-                <div class="container-custom mx-auto">
-                        <div class="card my-20 mx-10 px-40 py-10 rounded-lg shadow-lg bg-blue-50 dark:bg-gray-800">
-                                <aboutp0.Content  />
-                        </div>                       
-                </div> -->
 
                 <div class="container-custom mx-auto">                        
-                        <div class="mx-10 my-5 px-40 py-10 rounded-lg shadow-lg bg-white dark:bg-gray-800">
+                        <div class="mx-auto p-20 rounded-lg shadow-lg bg-white dark:bg-gray-800">
                                 <h1 class="text-3xl font-bold text-center py-10">{aboutp1.frontmatter.title}</h1>
                                 <aboutp1.Content  />
                         </div>
                 </div>
                 
                 <div class="container-custom mx-auto">
-                        <div class="card mx-10 px-40 py-10 rounded-lg shadow-lg bg-blue-100 dark:bg-gray-800">
+                        <div class="card p-20 rounded-lg shadow-lg bg-blue-100 dark:bg-gray-800">
                                 <h2 class="text-3xl font-bold text-center py-10">{aboutp2.frontmatter.title}</h1>
                                         <aboutp2.Content  />
                                 </div>                       
@@ -49,14 +43,14 @@ const { frontmatter } = aboutp0;
                 </div>
 
                 <div class="container-custom mx-auto">                        
-                        <div class="card mt-10 mx-10 px-40 py-10 rounded-lg shadow-lg bg-white dark:bg-gray-800">
+                        <div class="card mx-auto my-10 px-20 py-10 rounded-lg shadow-lg bg-white dark:bg-gray-800">
                                 <h1 class="text-3xl font-bold text-center py-10">{aboutp3.frontmatter.title}</h1>
                                 <aboutp3.Content  />
                         </div>                       
                 </div>
 
                 <div class="container-custom mx-auto">                        
-                        <div class="card my-5 mx-10 px-40 py-10 rounded-lg shadow-lg bg-blue-100 dark:bg-gray-800">
+                        <div class="card  mx-auto p-20 rounded-lg shadow-lg bg-blue-100 dark:bg-gray-800">
                                 <h1 class="text-3xl font-bold text-center py-10">{aboutp4.frontmatter.title}</h1>
                                 <aboutp4.Content  />
                         </div>                       
@@ -67,3 +61,13 @@ const { frontmatter } = aboutp0;
         
         <Footer />
 </BlogLayout>
+<style>
+.img-about {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        max-width: 80rem;
+        object-fit:cover ;
+        margin-inline: auto;
+}
+</style>
