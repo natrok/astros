@@ -23,7 +23,7 @@ const { frontmatter } = aboutp0;
 <BlogLayout title={frontmatter.title}>
         <Header />
         <div class="container-custom">
-                <img src={LadyImg.src} alt="Logo" class="m-10 img-about rounded-e-sm " />
+                <img src={LadyImg.src} alt="Logo" class="img-about rounded-e-sm " />
         </div>
         <section id="about" class="section max-w-7xl justify-center mx-auto">
 
@@ -35,7 +35,7 @@ const { frontmatter } = aboutp0;
                 </div>
                 
                 <div class="container-custom mx-auto">
-                        <div class="card p-20 rounded-lg shadow-lg bg-blue-100 dark:bg-gray-800">
+                        <div class="card p-20 my-10 rounded-lg shadow-lg bg-blue-100 dark:bg-gray-800">
                                 <h2 class="text-3xl font-bold text-center py-10">{aboutp2.frontmatter.title}</h1>
                                         <aboutp2.Content  />
                                 </div>                       
@@ -61,13 +61,3 @@ const { frontmatter } = aboutp0;
         
         <Footer />
 </BlogLayout>
-<style>
-.img-about {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16/9;
-        max-width: 80rem;
-        object-fit:cover ;
-        margin-inline: auto;
-}
-</style>
