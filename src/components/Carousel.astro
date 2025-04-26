@@ -1,9 +1,13 @@
 ---
+import {geti18n} from "../i18n/utils"; // Import the i18n function to 
+const {currentLocale = 'es'} = Astro;
+const translations = geti18n({currentLocale}); 
+
 import "../styles/Carousel.css";
 const testimonialSection =
 {
-    title: "Lo que dicen algunos de mis estudiantes",
-    description: "No te fíes solo de mis palabras. Esto es lo que mis estudiantes de todo el mundo opinan sobre su experiencia en mis clases como su profesora de español."   
+    title: translations.carousel.Title,
+    description: translations.carousel.text,   
 }
 const testimonials = [
   {

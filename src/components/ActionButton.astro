@@ -1,19 +1,18 @@
 ---
 const {text, url} = Astro.props;
+import { transformer } from "astro:schema";
+import {geti18n} from "../i18n/utils"; // Import the i18n function to 
+const {currentLocale = 'es'} = Astro;
+const translations = geti18n({currentLocale}); // Get the translations
+
+
 
 const actionButton = {
-    title: "¿Estás listo para hablar español con confianza?",
-    subtitulo: "Puedes hacer una clase de prueba conmigo de 30 minutos sin compromiso",
-    description: "Únete a muchos estudiantes satisfechos que han alcanzados sus objetivos con mis clases de español",
+    title: translations.trial.title,
+    subtitulo: translations.trial.subtitle,    
+    description: translations.trial.description,
 }
-
 ---
-<!-- <div class="text-center mt-20">    
-    <a href={url} class="btn-secondary">
-        {text}
-      </a>
-</div> -->
-
 <div class="container-custom">
     <div class="mt-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-5 md:p-12 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-r from-primary-600/30 to-secondary-600/30 backdrop-blur-sm"></div>

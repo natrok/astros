@@ -1,27 +1,32 @@
 ---
+import {geti18n} from "../i18n/utils"; // Import the i18n function to 
+const {currentLocale = 'es'} = Astro;
+const translations = geti18n({currentLocale}); // Get the translations
+
+
 const features = [
   {
-    title: "Evaluación de Nivel Gratuita",
-    description: "Empezamos con una prueba de nivel personalizada para identificar tus fortalezas y áreas de mejora.",
+    title: translations.Metodologia.features[0].Title,
+    description: translations.Metodologia.features[0].text,
     icon: "M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2",
     color: "primary"
   },
   {
-    title: "Seguimiento y Feedback",
+    title: translations.Metodologia.features[1].Title,
+    description: translations.Metodologia.features[1].text,
     icon: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z",
-    description: "Te doy un seguimiento constante con ejercicios entre clases, para que siempre sepas en qué mejorar y cómo avanzar más rápido.",
-      color: "accent"
+    color: "accent"
   },
   {
-    title: "Clases en Línea Personalizadas",
-    description: "Ya sea que quieras mejorar tu gramática, practicar la conversación o aprender vocabulario específico para tu profesión, adaptamos las clases a tus objetivos.",
+    title: translations.Metodologia.features[2].Title,
+    description: translations.Metodologia.features[2].text,
     icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
     color: "secondary"
   },
 
 ];
 
-const metodologiaTitle = "¿Cómo funcionan las clases?";
+const metodologiaTitle = translations.Metodologia.title;
 ---
 <section id="features" class="section bg-gray-50 dark:bg-gray-200/50 mt-0">
     <div class="container-custom ">

@@ -1,0 +1,62 @@
+{
+    "title": "Español con Lady - Aprende Español de Forma Divertida y Eficaz",
+    "heroHeader": {
+      "title": "Bienvenido a",
+      "highlightText": "Español con Lady",
+      "description": "¡Aprende Español de Forma Divertida y Eficaz!"
+    },
+    "hero": {
+      "headline": "Comienza tu Camino hacia el Español Hoy Mismo",
+      "subheadline": "No importa si eres principiante o avanzado, mis clases están diseñadas para llevarte al siguiente nivel.",
+      "subheadline2": "¡Juntos lograremos que hables español con fluidez y confianza!",
+      "cta": "Reserva tu Clase de Prueba Gratis"
+    },
+    "Metodologia": {
+        "title": "¿Cómo funcionan las clases?",
+        "features": [
+            {
+            "Title": "Evaluación de Nivel Gratuita",
+            "text": "Empezamos con una prueba de nivel personalizada para identificar tus fortalezas y áreas de mejora."
+            },
+            {
+            "Title": "Seguimiento y Feedback",
+            "text": "Te doy un seguimiento constante con ejercicios entre clases, para que siempre sepas en qué mejorar y cómo avanzar más rápido."
+            },
+            {
+            "Title": "Clases en Línea Personalizadas",
+            "text": "Ya sea que quieras mejorar tu gramática, practicar la conversación o aprender vocabulario específico para tu profesión, adaptamos las clases a tus objetivos."
+            }
+       ]
+      },
+    "motivacion": {
+      "Title": "¿Por qué elegir Español con Lady?",
+       "features": [
+            {
+            "Title": "Clases Adaptadas a Ti",
+            "text": "Cada estudiante es único, por eso adapto mis clases según tu nivel, objetivos y ritmo de aprendizaje. Desde principiantes hasta avanzados, encontrarás un programa diseñado para tus necesidades."
+            },
+            {
+            "Title": "Profesora Certificada",
+            "text": "Con más de cuatro años de experiencia enseñando español a francófonos, te garantizo un aprendizaje eficaz. ¡Mis métodos están comprobados!"
+            },
+            {
+            "Title": "Flexibilidad y Comodidad",
+            "text": "Aprende desde donde quieras y cuando quieras con clases en línea. Tú eliges el horario que mejor te convenga."
+            },
+            {
+             "Title": "Recursos Exclusivos",
+             "text": "Acceso a materiales didácticos como guías, ejercicios, podcasts y más para complementar tus clases y mejorar tu aprendizajes"
+            }
+       ]
+    },
+
+    "carousel": {
+      "Title": "Lo que dicen algunos de mis estudiantes",
+       "text": "No te fíes solo de mis palabras. Esto es lo que mis estudiantes de todo el mundo opinan sobre su experiencia en mis clases como su profesora de español"
+    },
+    "trial": {
+      "title": "¿Estás listo para hablar español con confianza?",
+      "subtitle": "Puedes hacer una clase de prueba conmigo de 30 minutos sin compromiso.",
+      "description": "Únete a muchos estudiantes satisfechos que han alcanzados sus objetivos con mis clases de español"
+    }
+  }

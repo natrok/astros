@@ -34,4 +34,6 @@ export const header = {
         'nav.faq': 'FAQ',
         'contact': 'Contactez-moi',
     },
-  } as const;
+} as const;
+  
+

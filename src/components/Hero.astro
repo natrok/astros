@@ -1,22 +1,23 @@
 ---
 import HeroSection from "./HeroSection.astro";
 
-
+import {geti18n} from "../i18n/utils"; // Import the i18n function to 
+const {currentLocale = 'es'} = Astro;
+const translations = geti18n({currentLocale}); // Get the translations
 const heroDescription = {
-    title: "Bienvenido a ",
-    highlightText: "\nEspañol con Lady",
-    description:
-        "¡Aprende Español de Forma Divertida y Eficaz!",
-};
+     title:  translations.heroHeader.title,
+     highlightText: "\n"+translations.heroHeader.highlightText,
+     description: translations.heroHeader.description,
+ };
 ---
 <HeroSection {...heroDescription} />
 
           {/* Call to Action Section */}
 <section class="section rounded-lg shadow-md text-center ml-8 mr-8">
-  <h2 class="mb-8">Comienza tu Camino hacia el Español Hoy Mismo</h2>
-  <p class="mb-2 text-xl">No importa si eres principiante o avanzado, mis clases están diseñadas para llevarte al siguiente nivel. </p>
-  <p class=" mb-2 text-xl">¡Juntos lograremos que hables español con <b>fluidez y confianza!</b></p>
+  <h2 class="mb-8">{translations.hero.headline}</h2>
+  <p class="mb-2 text-xl">{translations.hero.subheadline}. </p>
+  <p class=" mb-2 text-xl">{translations.hero.subheadline2}</b></p>
   <a href="/contact" class="btn-secondary mt-10 hover:scale-125 transition-transform duration-300 ease-in">
-    Reserva tu Clase de Prueba Gratis
+    {translations.hero.cta}
   </a>
 </section>

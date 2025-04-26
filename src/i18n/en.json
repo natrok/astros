@@ -1,0 +1,61 @@
+{
+    "title": "Spanish with Lady - Learn Spanish in a Fun and Effective Way",
+    "heroHeader": {
+        "title": "Welcome to",
+        "highlightText": "Spanish with Lady",
+        "description": "Learn Spanish in a Fun and Effective Way!"
+    },
+    "hero": {
+        "headline": "Start Your Journey to Spanish Today",
+        "subheadline": "Whether you're a beginner or advanced, my classes are designed to take you to the next level.",
+        "subheadline2": "¡Together, we'll make sure you speak Spanish fluently and confidently!",
+        "cta": "Book Your Free Trial Class"
+    },
+    "Metodologia": {
+        "title": "How Do the Classes Work?",
+        "features": [
+            {
+                "Title": "Free Level Assessment",
+                "text": "We start with a personalized level test to identify your strengths and areas for improvement."
+            },
+            {
+                "Title": "Follow-Up and Feedback",
+                "text": "I provide constant follow-up with exercises between classes, so you always know what to improve and how to progress faster."
+            },
+            {
+                "Title": "Personalized Online Classes",
+                "text": "Whether you want to improve your grammar, practice conversation, or learn specific vocabulary for your profession, the classes are tailored to your goals."
+            }
+        ]
+    },
+    "motivacion": {
+        "Title": "Why Choose Spanish with Lady?",
+        "features": [
+            {
+                "Title": "Classes Tailored to You",
+                "text": "Every student is unique, which is why I adapt my classes to your level, goals, and learning pace. From beginners to advanced learners, you'll find a program designed for your needs."
+            },
+            {
+                "Title": "Certified Teacher",
+                "text": "With over four years of experience teaching Spanish to French speakers, I guarantee effective learning. My methods are proven!"
+            },
+            {
+                "Title": "Flexibility and Comfort",
+                "text": "Learn from wherever you want and whenever you want with online classes. You choose the schedule that suits you best."
+            },
+            {
+                "Title": "Exclusive Resources",
+                "text": "Access educational materials such as guides, exercises, podcasts, and more to complement your classes and enhance your learning."
+            }
+        ]
+    },
+    "carousel": {
+        "Title": "What Some of My Students Say",
+        "text": "Don't just take my word for it. Here's what my students from around the world have to say about their experience with me as their Spanish teacher."
+    },
+    "trial": {
+        "title": "Are You Ready to Speak Spanish with Confidence?",
+        "subtitle": "You can have a 30-minute trial class with me, no strings attached.",
+        "description": "Join many satisfied students who have achieved their goals with my Spanish classes."
+    }
+}

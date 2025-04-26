@@ -1,15 +1,17 @@
 ---
+import {geti18n} from "../i18n/utils"; // Import the i18n function to 
+const {currentLocale = 'es'} = Astro;
+const translations = geti18n({currentLocale}); 
 
-const razones = [
-  { text: "Clases Adaptadas a Ti", description: "Cada estudiante es único, por eso adapto mis clases según tu nivel, objetivos y ritmo de aprendizaje. Desde principiantes hasta avanzados, encontrarás un programa diseñado para tus necesidades." },
-  { text: "Profesora Certificada", description: "Con más de cuatro años de experiencia enseñando español a francófonos, te garantizo un aprendizaje eficaz. ¡Mis métodos están comprobados!" },
-  { text: "Flexibilidad y Comodidad", description: "Aprende desde donde quieras y cuando quieras con clases en línea. Tú eliges el horario que mejor te convenga." },
-  { text: "Recursos Exclusivos", description: "Acceso a materiales didácticos como guías, ejercicios, podcasts y más para complementar tus clases y mejorar tu aprendizaje" },
-]; 
+const motivationTitle = translations.motivacion.Title;
+const razones = translations.motivacion.features.map((element) => {
+    return {
+        text: element.Title,
+        description: element.text
+    };
+}); 
 
-const motivationTitle = "¿Por qué elegir Español con Lady?";
-
-const buttonText = "Reserva tu Clase de Prueba Gratis";
+const buttonText = translations.hero.cta;
 const path = '/contact';
 
 import ActionButton from "./ActionButton.astro";

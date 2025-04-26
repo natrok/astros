@@ -1,0 +1,61 @@
+{
+    "title": "Espagnol avec Lady - Apprenez l'Espagnol de Manière Amusante et Efficace",
+    "heroHeader": {
+        "title": "Bienvenue à",
+        "highlightText": "Espagnol avec Lady",
+        "description": "Apprenez l'Espagnol de Manière Amusante et Efficace !"
+    },
+    "hero": {
+        "headline": "Commencez votre Voyage vers l'Espagnol dès Aujourd'hui",
+        "subheadline": "Que vous soyez débutant ou avancé, mes cours sont conçus pour vous faire progresser.",
+        "subheadline2": "¡Ensemble, nous veillerons à ce que vous parliez espagnol avec aisance et confiance!",
+        "cta": "Réservez votre Cours d'Essai Gratuit"
+    },
+    "Metodologia": {
+        "title": "Comment fonctionnent les cours ?",
+        "features": [
+            {
+                "Title": "Évaluation de Niveau Gratuite",
+                "text": "Nous commençons par un test de niveau personnalisé pour identifier vos points forts et vos axes d'amélioration."
+            },
+            {
+                "Title": "Suivi et Feedback",
+                "text": "Je vous offre un suivi constant avec des exercices entre les cours, pour que vous sachiez toujours sur quoi travailler et comment progresser plus rapidement."
+            },
+            {
+                "Title": "Cours en Ligne Personnalisés",
+                "text": "Que vous souhaitiez améliorer votre grammaire, pratiquer la conversation ou apprendre un vocabulaire spécifique à votre profession, les cours sont adaptés à vos objectifs."
+            }
+        ]
+    },
+    "motivacion": {
+        "Title": "Pourquoi choisir Espagnol avec Lady ?",
+        "features": [
+            {
+                "Title": "Cours Adaptés à Vous",
+                "text": "Chaque étudiant est unique, c'est pourquoi j'adapte mes cours à votre niveau, vos objectifs et votre rythme d'apprentissage. Des débutants aux avancés, vous trouverez un programme conçu pour vos besoins."
+            },
+            {
+                "Title": "Professeure Certifiée",
+                "text": "Avec plus de quatre ans d'expérience dans l'enseignement de l'espagnol aux francophones, je vous garantis un apprentissage efficace. Mes méthodes ont fait leurs preuves !"
+            },
+            {
+                "Title": "Flexibilité et Confort",
+                "text": "Apprenez où vous voulez et quand vous voulez avec des cours en ligne. Vous choisissez l'horaire qui vous convient le mieux."
+            },
+            {
+                "Title": "Ressources Exclusives",
+                "text": "Accédez à des supports pédagogiques tels que des guides, des exercices, des podcasts et bien plus encore pour compléter vos cours et améliorer votre apprentissage."
+            }
+        ]
+    },
+    "carousel": {
+        "Title": "Ce que disent certains de mes étudiants",
+        "text": "Ne vous fiez pas seulement à mes paroles. Voici ce que mes étudiants du monde entier pensent de leur expérience avec moi en tant que professeure d'espagnol."
+    },
+    "trial": {
+        "title": "Êtes-vous prêt à parler espagnol avec confiance ?",
+        "subtitle": "Vous pouvez faire un cours d'essai de 30 minutes avec moi, sans engagement.",
+        "description": "Rejoignez de nombreux étudiants satisfaits qui ont atteint leurs objectifs avec mes cours d'espagnol."
+    }
+}
