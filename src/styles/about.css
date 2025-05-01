@@ -20,7 +20,7 @@
   /* animation: fadeIn 3s ease; */
   width: 100%;
   height: auto;
-  aspect-ratio: 16/9;
+  aspect-ratio: 21/9;
   max-width: 100rem;
   object-fit:cover ;
   margin-inline: auto;
