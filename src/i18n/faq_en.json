@@ -1,0 +1,84 @@
+{
+    "introduction": {
+      "title": "Frequently Asked Questions (FAQ)",
+      "description": "Find answers to the most common questions about my Spanish classes.",
+      "note": "If you don't see your question here, don't hesitate to contact me!"
+    },
+    "questions": {    
+        "question_1": {
+        "question": "Do I need to have prior experience to take the classes?",
+        "answer": "No, it's not necessary. My classes are designed for all levels, from absolute beginners (A1) to advanced students (C2). Before starting, I conduct a free assessment of your level to tailor the classes to your needs."
+        },
+        "question_2": {
+        "question": "How are the online classes conducted?",
+        "answer": "All classes are taught on video call platforms like Zoom or Google Meet. All you need is a good internet connection and a device with a camera and microphone (computer, tablet, or smartphone). At the end of each class, you will receive support material and exercises to practice between sessions."
+        },
+        "question_3": {
+        "question": "How do I book a class?",
+        "answer": "You can book a class through my [Contact Form], or directly by clicking on the \"Book your class\" button on the main page. You can also contact me by email or WhatsApp to arrange the details and choose the schedule that best suits you."
+        },
+        "question_4": {
+        "question": "Do you offer a free trial class?",
+        "answer": "Yes! I offer a first free trial class of 30 minutes. During this session, we will assess your Spanish level and define your goals together. You can also get to know my teaching style and ask me any questions you may have before starting the course."
+        },
+        "question_5": {
+        "question": "What is the duration of each class?",
+        "answer": "Each class has a standard duration of 60 minutes, but if you prefer, I can offer shorter sessions (45 minutes) or longer sessions (90 minutes), depending on your availability and preferences. Just let me know when we schedule the classes."
+        },
+        "question_6": {
+        "question": "What levels of Spanish do you teach?",
+        "answer": "I teach students of all levels, from beginner (A1) to advanced (C2). Here is a quick description: Beginner (A1 - A2): Learn the basics, from greetings and essential vocabulary to simple grammatical structures. Intermediate (B1 - B2): Improve your fluency, learn to hold conversations on everyday topics, and start using more complex expressions. Advanced (C1 - C2): Perfect your Spanish to speak naturally in professional or academic situations, or if you plan to live in a Spanish-speaking country."
+        },
+        "question_7": {
+        "question": "How long will it take me to speak Spanish fluently?",
+        "answer": "The time it will take you to speak Spanish fluently will depend on several factors, such as your current level, the frequency of classes, and how much you practice outside of sessions. In general, students who take classes regularly (1-2 times per week) and practice between classes usually notice a significant improvement in 3 to 6 months."
+        },
+        "question_8": {
+        "question": "How much do the classes cost?",
+        "answer": "I offer several options according to your needs: Individual 60-minute class: €25 Package of 5 classes: €110 (€22 per class) Package of 10 classes: €200 (€20 per class) You can find all the details of the prices and plans in the [Prices and Plans] section."
+        },
+        "question_9": {
+        "question": "Can I cancel or reschedule a class?",
+        "answer": "Of course! I understand that your schedule may change. If you need to cancel or reschedule a class, you just need to notify me at least 24 hours in advance. If you don't do it within this period, the class will be considered taught."
+        },
+        "question_10": {
+        "question": "How is the payment for classes made?",
+        "answer": "Payment can be made by bank transfer or PayPal. I will provide you with the payment details once we confirm your reservation. You can pay per class or purchase class packages at a reduced price."
+        },
+        "question_11": {
+        "question": "Do you provide materials for studying between classes?",
+        "answer": "Yes! In addition to the live classes, I will provide you with personalized study materials after each class: interactive exercises, vocabulary lists, online resources, and recommendations for videos or podcasts in Spanish. Everything you need to continue learning between lessons."
+        },
+        "question_12": {
+        "question": "What language are the classes taught in?",
+        "answer": "My classes are in Spanish from day one, but if you need it, I can explain in French or English so that you better understand some difficult concepts. My goal is for you to feel comfortable while improving your Spanish."
+        },
+        "question_13": {
+        "question": "Do you offer specialized classes (business, tourism, etc.)?",
+        "answer": "Yes, I offer specialized Spanish classes for different professional areas, such as tourism, business, medicine, and more. These classes are designed to help you acquire the specific vocabulary and expressions you need in your field of work."
+        },
+        "question_14": {
+        "question": "Can I learn Spanish even if I don't live in France?",
+        "answer": "Of course! My classes are 100% online, which means you can take them from anywhere in the world, as long as you have an internet connection. Although my main focus is on French-speaking students, I also teach people from other countries."
+        },
+        "question_15": {
+        "question": "Can I learn Spanish for travel?",
+        "answer": "Yes, I offer a specific course for travelers who want to learn the most useful phrases and vocabulary before their trip to a Spanish-speaking country. You will learn how to communicate in restaurants, hotels, shops, and in common situations during the trip."
+        },
+        "question_16": {
+        "question": "How can I improve my Spanish outside of classes?",
+        "answer": "In addition to the lessons, I recommend that you practice every day by listening to podcasts in Spanish, watching series or movies with subtitles, and using applications like Duolingo or Memrise. I will also provide you with a list of additional resources so that you can continue practicing and improving on your own."
+        },
+        "question_17": {
+        "question": "Can I share my classes with a friend or family member?",
+        "answer": "If you are interested in learning with another person, I also offer the option of small group classes (maximum 3 people). This option is ideal if you and a friend or family member have a similar level of Spanish and want to learn together. Contact me for more details on prices and organization."
+        }
+    },
+    "closing": {
+      "final_question": "Do you have more questions?",
+      "contact_message": "If you haven't found the answer you were looking for, don't hesitate to contact me.",
+      "email": "laodrope@yahoo.com",
+      "whatsapp": "+33 768524875",
+      "farewell": "I'm here to help you with anything you need."
+    }
+  }

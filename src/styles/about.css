@@ -18,10 +18,10 @@
 
 .img-about{
   /* animation: fadeIn 3s ease; */
-  width: 80%;
+  width: 100%;
   height: auto;
   aspect-ratio: 16/9;
-  max-width: 80rem;
+  max-width: 100rem;
   object-fit:cover ;
   margin-inline: auto;
 }

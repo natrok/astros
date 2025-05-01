@@ -1,0 +1,80 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection.astro';
+import {useNavigationTranslations} from "../i18n/utils";
+
+import {getFAQi18n} from "../i18n/utils"; // Import the i18n function to 
+const {currentLocale = 'es'} = Astro;
+const translations = getFAQi18n({currentLocale}); // Get the translations
+const questions = Object.values(translations.questions);
+
+const navTranslations = useNavigationTranslations(currentLocale as "es" | "en" | "fr"); // Get the translations for the contact page
+const contact = navTranslations("contact");; // Get the translations for the contact page
+---
+<Layout title={translations.introduction.title}>
+    <Header />
+    <HeroSection 
+    title= {translations.introduction.description} 
+    description={translations.introduction.note} 
+    />
+
+    <main>
+        <section class="py-16 bg-white dark:bg-gray-800">
+            <div class="container-custom">
+            <div class="max-w-4xl mx-auto">
+                <div id="general" class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
+                    <span class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3">
+                        <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </span>
+                    {translations.introduction.title}      
+                </h2>
+
+                      
+                {questions.map((question, index) => (
+                    <div class="space-y-6">
+                            <div class="card p-6 border mb-8 mx-1 border-gray-200 dark:border-gray-700" onclick="this.classList.toggle('open')">
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{question.question}
+      
+                                </h3>
+                                
+                                <p class="card-content text-gray-600 dark:text-gray-300 ">
+                                    {question.answer}
+                                </p>
+                            </div>
+                        </div>
+                ))}
+                </div>
+            </div>
+            </div>
+            <div class="text-center mt-16">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">{translations.closing.final_question}</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-8">
+                    {translations.closing.contact_message}
+                </p>
+                <a href="/contact" class="btn-primary">{contact}</a>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>
+<style>
+.card {
+  cursor: pointer;
+}
+
+.card-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.card.open .card-content {
+    /* display: block; */
+    max-height: 200px;
+}
+
+</style>
