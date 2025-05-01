@@ -1,9 +1,9 @@
 ---
-title: '¡Hola! Conoce a Tu Profesora'
+title: 'Conoce a Tu Profesora'
 description: 'Esta es la pagina sobre mi de la profesora de español'
 image:
 ---
-## Soy Lady, tu compañera en esta aventura de aprender español.
+## ¡Hola! Soy Lady, tu compañera en esta aventura de aprender español.
 <br>
 
 Soy licenciada en Pedagogía Infantil, y mi corazón late al ritmo de la creatividad, la didáctica y el arte. ¡Me encanta cantar, jugar y crear! Esta pasión por la enseñanza y el aprendizaje me ha llevado a convertirme en profesora de español certificada, con más de cuatro años de experiencia guiando a estudiantes de todo el mundo en su camino hacia la fluidez.

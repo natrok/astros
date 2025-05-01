@@ -1,0 +1,13 @@
+---
+import AboutComponent from "../../components/AboutComponent.astro";
+export function getStaticPaths() {
+  return [
+    { params: { lang: "es" } },
+    { params: { lang: "en" } },
+    { params: { lang: "fr" } },
+  ];
+}
+
+const {currentLocale = 'es'} = Astro;
+---
+<AboutComponent lang={currentLocale as "es" | "en" | "fr"}  />

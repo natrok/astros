@@ -1,0 +1,69 @@
+---
+import BlogLayout from "../layouts/Layout.astro";
+import LadyImg from "../assets/acerca.png";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+const buttonText = "Reserva tu Clase de Prueba Gratis";
+const path = '/contact';
+import ActionButton from "../components/ActionButton.astro";
+
+import { getAboutSections } from '../i18n/aboutContent';
+
+
+const {currentLocale = 'es'} = Astro;
+const translations = getAboutSections({currentLocale});
+
+ const { lang } = Astro.props;
+
+ const aboutp0 = translations.at(0);
+const aboutp1 = translations.at(1);
+const aboutp2 = translations.at(2);
+const aboutp3 = translations.at(3);
+const aboutp4 = translations.at(4);
+---
+
+<BlogLayout Lang={lang} title={translations.at(0).frontmatter.title}>
+    <Header />
+    <div class="container-custom">
+            <img src={LadyImg.src} alt="Logo" class="img-about rounded-e-sm " />
+    </div>
+    <section id="about" class="section max-w-7xl justify-center mx-auto">
+
+            <div class="container-custom mx-auto">
+                <div class="card p-20 my-10 rounded-lg shadow-lg bg-blue-100 dark:bg-gray-800">
+                                <aboutp0.Content  />
+                </div>
+            </div>
+
+            <div class="container-custom mx-auto">                        
+                    <div class="mx-auto p-20 rounded-lg shadow-lg bg-white dark:bg-gray-800">
+                            <h1 class="text-3xl font-bold text-center py-10">{aboutp1.frontmatter.title}</h1>
+                            <aboutp1.Content  />
+                    </div>
+            </div>
+            
+            <div class="container-custom mx-auto">
+                    <div class="card p-20 my-10 rounded-lg shadow-lg bg-blue-100 dark:bg-gray-800">
+                            <h2 class="text-3xl font-bold text-center py-10">{aboutp2.frontmatter.title}</h1>
+                                    <aboutp2.Content  />
+                            </div>                       
+                    <ActionButton text={buttonText} url={path} />                       
+            </div>
+
+            <div class="container-custom mx-auto">                        
+                    <div class="card mx-auto my-10 px-20 py-10 rounded-lg shadow-lg bg-white dark:bg-gray-800">
+                            <h1 class="text-3xl font-bold text-center py-10">{aboutp3.frontmatter.title}</h1>
+                            <aboutp3.Content  />
+                    </div>                       
+            </div>
+
+            <div class="container-custom mx-auto">                        
+                    <div class="card  mx-auto p-20 rounded-lg shadow-lg bg-blue-100 dark:bg-gray-800">
+                            <h1 class="text-3xl font-bold text-center py-10">{aboutp4.frontmatter.title}</h1>
+                            <aboutp4.Content  />
+                    </div>                       
+                    <ActionButton text={buttonText} url={path} />
+            </div>
+    </section>    
+    <Footer />
+</BlogLayout>

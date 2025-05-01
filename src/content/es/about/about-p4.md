@@ -12,6 +12,3 @@ A pesar de esto, mi inquietud por seguir creciendo personal y profesionalmente m
 
 En Francia, mientras estudiaba francés, también trabajé como nounou y profesora de español. El destino hizo que regresara a Colombia después de unos meses, y el conocimiento adquirido me permitió trabajar como profesora de francés entre 2017 y 2018 en preescolar y primaria. En 2019 volví a Francia para continuar mi formación en la enseñanza de español como lengua extranjera. Durante los últimos años, he tenido experiencias maravillosas con mis estudiantes, acompañándolos en sus procesos de aprendizaje con motivos profesionales o personales, tanto en institutos de idiomas como en clases particulares, presenciales y online. Actualmente, sigo ofreciendo clases de forma virtual y presencial en diversas plataformas nacionales e internacionales..<br><br>
 
-
-
-

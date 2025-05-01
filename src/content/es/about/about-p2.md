@@ -7,5 +7,3 @@ description: 'Esta es la pagina sobre mi de la profesora de español'
 2. Te doy las herramientas y te guio a través de Talleres de aprendizaje, textos referenciales, casos concretos, documentos cortos y actividades concretas para que logres progresar en la expresión y comprensión oral de forma inicial<br><br>
 
 3. Te acompaño a descubrir las etapas por las que estas pasando durante tu proceso de aprendizaje y de qué manera puedes avanzar en tus objetivos personales.<br><br>
-
-

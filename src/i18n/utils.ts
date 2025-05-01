@@ -20,5 +20,4 @@ export const geti18n = ({ currentLocale }: { currentLocale: string}) =>
   if (currentLocale === 'en') return en;  
   if (currentLocale === 'fr') return fr;
   return es; // Default to Spanish if no match found
-
 }
