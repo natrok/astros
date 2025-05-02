@@ -14,9 +14,9 @@ import { getAboutSections } from '../i18n/aboutContent';
 const {currentLocale = 'es'} = Astro;
 const translations = getAboutSections({currentLocale});
 
- const { lang } = Astro.props;
+const { lang } = Astro.props;
 
- const aboutp0 = translations.at(0);
+const aboutp0 = translations.at(0);
 const aboutp1 = translations.at(1);
 const aboutp2 = translations.at(2);
 const aboutp3 = translations.at(3);
@@ -25,8 +25,9 @@ const aboutp4 = translations.at(4);
 
 <BlogLayout Lang={lang} title={translations.at(0).frontmatter.title}>
     <Header />
-    <div class="container-custom">
-            <img src={LadyImg.src} alt="Logo" class="img-about rounded-e-sm " />
+    <div class="container-custom img-about ">
+        <h1 class="py-48 p-10 justify-center text-blue-900">Bienvenido!</h1>
+            <!-- <img src={LadyImg.src} alt="Logo" class="img-about rounded-e-sm " /> -->
     </div>
     <section id="about" class="section max-w-7xl justify-center mx-auto">
 

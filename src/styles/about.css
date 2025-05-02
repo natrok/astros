@@ -18,12 +18,15 @@
 
 .img-about{
   /* animation: fadeIn 3s ease; */
-  width: 100%;
-  height: auto;
-  aspect-ratio: 21/9;
-  max-width: 100rem;
-  object-fit:cover ;
-  margin-inline: auto;
+  width: 60%;
+  height: auto; 
+  aspect-ratio: 23/9;
+  background-size: cover;
+  background-position: center;
+  /* max-width: 100rem; */
+  object-fit:contain ; 
+  /* margin-inline: auto; */
+  background-image: url('/src/assets/acerca.png'); 
 }
 
 @keyframes fadeIn {
