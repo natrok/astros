@@ -33,3 +33,29 @@ export const getFAQi18n = ({ currentLocale }: { currentLocale: string}) =>
     return faq_es; // Default to Spanish if no match found
   }
   
+export  function getLocalizedUrl( currentPath: string, targetLang: string ): string {
+ 
+  console.log('currentPath', currentPath);
+  console.log('targetLang', targetLang);
+
+  const pathSegments = currentPath.split('/').filter(Boolean);
+  var newPath;
+    // Si el primer segmento es un idioma soportado, lo eliminamos
+    if (['es', 'en', 'fr'].includes(pathSegments[0])) {
+      pathSegments.shift();
+    }
+  
+    // Si el idioma objetivo es el predeterminado, no agregamos prefijo
+  if (targetLang === defaultLang) {
+      newPath = '/' + pathSegments.join('/');
+      console.log('===> newPath', newPath);
+      return newPath;
+    }
+  
+  // Para otros idiomas, agregamos el prefijo del idioma
+   newPath = '/' + targetLang + '/' + pathSegments.join('/');
+  console.log('newPath', newPath);
+
+  return newPath;  
+}
+  

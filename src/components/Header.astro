@@ -2,25 +2,37 @@
 import ladyLogo from "../assets/logoLady.png";
 import Navigation from "./Navigation.astro";
 import NavigationMobile from "./NavigationMobile.astro";
+import {useNavigationTranslations, getLangFromUrl, getLocalizedUrl} from "../i18n/utils";
 
-
-import {useNavigationTranslations, getLangFromUrl} from "../i18n/utils";
+import { defaultLang } from '../i18n/indexui';
 
 import "../styles/header.css";
 
 const title = "Español Con Lady";
-const lang = getLangFromUrl(Astro.url);
+const lang = getLangFromUrl(Astro.url) || defaultLang;
 const translations = useNavigationTranslations(lang);
+const prefix = lang === "es"  ? "/" : `/${lang}/`;
 
 const headerPages = [
-  { text: translations("nav.home"), url: "/" },
-  { text: translations("nav.reservation"), url: `/${lang}/contact`},
-  { text: translations("nav.class"), url: "/features" },
-  { text: translations("nav.about"), url: "/about" },
-  { text: translations("nav.faq"), url: "/faq" },  
+  { text: translations("nav.home"), url:  `${prefix}`},
+  { text: translations("nav.reservation"), url: `${prefix}contact`},
+  { text: translations("nav.class"), url: `${prefix}features` },
+  { text: translations("nav.about"), url: `${prefix}about` },
+  { text: translations("nav.faq"), url: `${prefix}faq` },  
 ];
 
 const contact = translations("contact");
+
+const languagesFlags = [
+  { lang: "es", src: "https://flagcdn.com/es.svg" },
+  { lang: "en", src: "https://flagcdn.com/us.svg" },
+  { lang: "fr", src: "https://flagcdn.com/fr.svg" },
+];
+
+const visibleLanguagesFlags = languagesFlags.filter(
+  (flag) => flag.lang !== lang
+);
+
 ---
 
 <header
@@ -30,7 +42,7 @@ const contact = translations("contact");
     class="container-custom flex items-center justify-between border-spacing-1.5 border-cyan-200"
   >
     <a href="/" class="flex items-center" aria-label="Go to homepage">
-      <img class="h-10 w-auto" src={ladyLogo.src} />
+      <img class="h-10 w-auto min-w-10" src={ladyLogo.src} />
       <span
         class="ml-2 text-xl font-display font-semibold text-secondary-900 dark:text-white"
         >{title}</span
@@ -77,7 +89,18 @@ const contact = translations("contact");
         </svg>
       </button>
 
-      <a href="/contact" class="hidden sm:inline-flex btn-primary"
+      <div class="flex header space-x-6">
+        {visibleLanguagesFlags.map((flag) => (
+          <a
+            href={getLocalizedUrl(Astro.url.pathname, flag.lang)}
+            class="w-6 h-6 rounded-full overflow-hidden"
+            aria-label={`Change language to ${flag.lang}`}
+          >
+            <img src={flag.src} alt={flag.lang} class="w-full h-full" />
+          </a>
+        ))}
+      </div>
+      <a href="/contact" class="hidden sm:inline-flex btn-primary min-w-44"
         >{contact}</a
       >
 
