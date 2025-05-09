@@ -1,4 +1,10 @@
 {
+    "sections": {
+      "section_1": "General",
+      "section_2": "Reservación y pago",
+      "section_3": "Características"      
+    },
+
     "introduction": {
       "title": "Preguntas Frecuentes (FAQ)",
       "description": "Encuentra respuestas a las preguntas más comunes sobre mis clases de español.",
@@ -13,67 +19,68 @@
         "question": "¿Cómo se desarrollan las clases online?",
         "answer": "Todas las clases se imparten en plataformas de videollamadas como Zoom o Google Meet. Lo único que necesitas es una buena conexión a internet y un dispositivo con cámara y micrófono (ordenador, tablet o smartphone). Al final de cada clase, recibirás material de apoyo y ejercicios para que practiques entre sesiones."
         },
+
         "question_3": {
-        "question": "¿Cómo reservo una clase?",
-        "answer": "Puedes reservar una clase a través de mi [Formulario de Contacto] , o directamente haciendo clic en el botón de \"Reserva tu clase\" en la página principal. También puedes contactarme por correo electrónico o WhatsApp para acordar los detalles y elegir el horario que mejor se ajuste a ti."
-        },
-        "question_4": {
         "question": "¿Ofreces una clase de prueba gratuita?",
         "answer": "¡Sí! Ofrezco una primera clase de prueba gratuita de 30 minutos. Durante esta sesión, evaluaremos tu nivel de español y definiremos juntos tus objetivos. También podrás conocer mi estilo de enseñanza y hacerme cualquier pregunta que tengas antes de empezar el curso."
         },
-        "question_5": {
+        "question_4": {
         "question": "¿Cuál es la duración de cada clase?",
         "answer": "Cada clase tiene una duración estándar de 60 minutos, pero si lo prefieres, puedo ofrecer sesiones más cortas (45 minutos) o más largas (90 minutos), según tu disponibilidad y preferencias. Solo házmelo saber cuándo agendemos las clases."
         },
-        "question_6": {
+        "question_5": {
         "question": "¿Qué niveles de español enseñas?",
         "answer": "Enseño a estudiantes de todos los niveles, desde principiante (A1) hasta avanzado (C2). Aquí tienes una descripción rápida: Principiante (A1 - A2): Aprende lo básico, desde saludos y vocabulario esencial hasta estructuras gramaticales sencillas. Intermedio (B1 - B2): Mejora tu fluidez, aprende a mantener conversaciones sobre temas cotidianos y comienza a usar expresiones más complejas. Avanzado (C1 - C2): Perfecciona tu español para hablar con naturalidad en situaciones profesionales o académicas, o si planeas vivir en un país hispanohablante."
         },
-        "question_7": {
+        "question_6": {
         "question": "¿Cuánto tiempo tardaré en hablar español con fluidez?",
         "answer": "El tiempo que necesitarás para hablar español con fluidez dependerá de varios factores, como tu nivel actual, la frecuencia de las clases, y cuánto practiques fuera de las sesiones. En general, los estudiantes que toman clases regularmente (1-2 veces por semana) y practican entre clases suelen notar una gran mejora en 3 a 6 meses."
-        },
+        }
+      },
+      "pricing":{
+        "question_7": {
+          "question": "¿Cuánto cuestan las clases?",
+          "answer": "Ofrezco varias opciones según tus necesidades: Clase individual de 60 minutos: 25€ Paquete de 5 clases: 110€ (22€ por clase) Paquete de 10 clases: 200€ (20€ por clase) Puedes consultar todos los detalles de los precios y planes en la sección de [Planes y Tarifas]."
+          },
+
         "question_8": {
-        "question": "¿Cuánto cuestan las clases?",
-        "answer": "Ofrezco varias opciones según tus necesidades: Clase individual de 60 minutos: 25€ Paquete de 5 clases: 110€ (22€ por clase) Paquete de 10 clases: 200€ (20€ por clase) Puedes consultar todos los detalles de los precios y planes en la sección de [Planes y Tarifas]."
-        },
-        "question_9": {
         "question": "¿Puedo cancelar o reprogramar una clase?",
         "answer": "¡Por supuesto! Entiendo que tu agenda puede cambiar. Si necesitas cancelar o reprogramar una clase, solo debes avisarme con al menos 24 horas de antelación. Si no lo haces dentro de este plazo, la clase se considerará impartida."
         },
-        "question_10": {
+        "question_9": {
         "question": "¿Cómo se efectúa el pago de las clases?",
         "answer": "El pago puede hacerse mediante transferencia bancaria o PayPal. Los detalles para el pago te los proporcionaré una vez que confirmemos tu reserva. Puedes pagar por clase o adquirir paquetes de clases a un precio reducido."
         },
+
+        "question_10": {
+          "question": "¿Cómo reservo una clase?",
+          "answer": "Puedes reservar una clase a través de mi [Formulario de Contacto] , o directamente haciendo clic en el botón de \"Reserva tu clase\" en la página principal. También puedes contactarme por correo electrónico o WhatsApp para acordar los detalles y elegir el horario que mejor se ajuste a ti."
+         }
+        },     
+
+      "feautures":{
         "question_11": {
-        "question": "¿Proporcionas materiales para estudiar entre clases?",
-        "answer": "¡Sí! Además de las clases en vivo, te proporcionaré materiales de estudio personalizados después de cada clase: ejercicios interactivos, listas de vocabulario, recursos en línea y recomendaciones de videos o podcasts en español. Todo lo que necesitas para seguir aprendiendo entre lecciones."
-        },
-        "question_12": {
         "question": "¿En qué idioma se imparten las clases?",
         "answer": "Mis clases son en español desde el primer día, pero si lo necesitas, puedo explicarte en francés o inglés para que entiendas mejor algunos conceptos difíciles. Mi objetivo es que te sientas cómodo mientras mejoras tu español."
         },
-        "question_13": {
+        "question_12": {
         "question": "¿Ofreces clases especializadas (negocios, turismo, etc.)?",
         "answer": "Sí, ofrezco clases especializadas en español para diferentes áreas profesionales, como el turismo, negocios, medicina, y más. Estas clases están diseñadas para ayudarte a adquirir el vocabulario y las expresiones específicas que necesitas en tu campo de trabajo."
         },
-        "question_14": {
-        "question": "¿Puedo aprender español, aunque no viva en Francia?",
-        "answer": "¡Claro! Mis clases son 100% online, lo que significa que puedes tomarlas desde cualquier parte del mundo, siempre que tengas una conexión a internet. Aunque mi enfoque principal está en estudiantes francófonos, también enseño a personas de otros países."
-        },
-        "question_15": {
+
+        "question_13": {
         "question": "¿Puedo aprender español para viajar?",
         "answer": "Sí, ofrezco un curso específico para viajeros que quieran aprender las frases y vocabulario más útiles antes de su viaje a un país hispanohablante. Aprenderás cómo comunicarte en restaurantes, hoteles, tiendas, y en situaciones comunes durante el viaje."
         },
-        "question_16": {
+        "question_14": {
         "question": "¿Cómo puedo mejorar mi español fuera de las clases?",
         "answer": "Además de las lecciones, te recomiendo que practiques todos los días escuchando podcasts en español, viendo series o películas con subtítulos, y usando aplicaciones como Duolingo o Memrise. También te proporcionaré una lista de recursos adicionales para que sigas practicando y mejorando por tu cuenta."
         },
-        "question_17": {
+        "question_15": {
         "question": "¿Puedo compartir mis clases con un amigo o familiar?",
         "answer": "Si te interesa aprender con otra persona, también ofrezco la opción de clases en grupo reducido (máximo 3 personas). Esta opción es ideal si tú y un amigo o familiar tienen un nivel de español similar y quieren aprender juntos. Contáctame para más detalles sobre precios y organización."
         }
-    },
+      },
 
     "closing": {
       "final_question": "¿Tienes más preguntas?",

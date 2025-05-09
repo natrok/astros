@@ -1,84 +1,85 @@
 {
-    "introduction": {
-      "title": "Foire aux Questions (FAQ)",
-      "description": "Trouvez les réponses aux questions les plus fréquentes sur mes cours d'espagnol.",
-      "note": "Si vous ne trouvez pas votre question ici, n'hésitez pas à me contacter !"
+  "sections": {
+    "section_1": "Général",
+    "section_2": "Réservation et paiement",
+    "section_3": "Caractéristiques"
+  },
+  "introduction": {
+    "title": "Foire aux questions (FAQ)",
+    "description": "Trouvez les réponses aux questions les plus fréquemment posées sur mes cours d'espagnol.",
+    "note": "Si vous ne trouvez pas votre question ici, n'hésitez pas à me contacter !"
+  },
+  "questions": {
+    "question_1": {
+      "question": "Dois-je avoir une expérience préalable pour suivre les cours ?",
+      "answer": "Non, ce n'est pas nécessaire. Mes cours sont conçus pour tous les niveaux, des débutants complets (A1) aux étudiants avancés (C2). Avant de commencer, je réalise une évaluation gratuite de votre niveau afin d'adapter les cours à vos besoins."
     },
-    "questions": {
-        "question_1": {
-        "question": "Ai-je besoin d'avoir une expérience préalable pour suivre les cours ?",
-        "answer": "Non, ce n'est pas nécessaire. Mes cours sont conçus pour tous les niveaux, des débutants complets (A1) aux étudiants avancés (C2). Avant de commencer, je réalise une évaluation gratuite de votre niveau afin d'adapter les cours à vos besoins."
-        },
-        "question_2": {
-        "question": "Comment se déroulent les cours en ligne ?",
-        "answer": "Tous les cours se déroulent sur des plateformes de visioconférence comme Zoom ou Google Meet. La seule chose dont vous avez besoin est une bonne connexion internet et un appareil avec une caméra et un microphone (ordinateur, tablette ou smartphone). À la fin de chaque cours, vous recevrez du matériel de soutien et des exercices pour pratiquer entre les séances."
-        },
-        "question_3": {
-        "question": "Comment réserver un cours ?",
-        "answer": "Vous pouvez réserver un cours via mon [Formulaire de Contact], ou directement en cliquant sur le bouton \"Réserver votre cours\" sur la page principale. Vous pouvez également me contacter par e-mail ou WhatsApp pour organiser les détails et choisir l'horaire qui vous convient le mieux."
-        },
-        "question_4": {
-        "question": "Offrez-vous un cours d'essai gratuit ?",
-        "answer": "Oui ! J'offre un premier cours d'essai gratuit de 30 minutes. Pendant cette séance, nous évaluerons votre niveau d'espagnol et définirons ensemble vos objectifs. Vous pourrez également découvrir mon style d'enseignement et me poser toutes les questions que vous avez avant de commencer le cours."
-        },
-        "question_5": {
-        "question": "Quelle est la durée de chaque cours ?",
-        "answer": "Chaque cours a une durée standard de 60 minutes, mais si vous préférez, je peux proposer des séances plus courtes (45 minutes) ou des séances plus longues (90 minutes), selon vos disponibilités et vos préférences. Il suffit de me le faire savoir lorsque nous planifions les cours."
-        },
-        "question_6": {
-        "question": "Quels niveaux d'espagnol enseignez-vous ?",
-        "answer": "J'enseigne à des étudiants de tous les niveaux, du débutant (A1) à l'avancé (C2). Voici une description rapide : Débutant (A1 - A2) : Apprenez les bases, des salutations et du vocabulaire essentiel aux structures grammaticales simples. Intermédiaire (B1 - B2) : Améliorez votre fluidité, apprenez à tenir des conversations sur des sujets quotidiens et commencez à utiliser des expressions plus complexes. Avancé (C1 - C2) : Perfectionnez votre espagnol pour parler naturellement dans des situations professionnelles ou académiques, ou si vous envisagez de vivre dans un pays hispanophone."
-        },
-        "question_7": {
-        "question": "Combien de temps me faudra-t-il pour parler couramment espagnol ?",
-        "answer": "Le temps qu'il vous faudra pour parler couramment espagnol dépendra de plusieurs facteurs, tels que votre niveau actuel, la fréquence des cours et le temps que vous consacrez à la pratique en dehors des séances. En général, les étudiants qui suivent des cours régulièrement (1 à 2 fois par semaine) et qui pratiquent entre les cours constatent généralement une nette amélioration en 3 à 6 mois."
-        },
-        "question_8": {
-        "question": "Combien coûtent les cours ?",
-        "answer": "Je propose plusieurs options selon vos besoins : Cours individuel de 60 minutes : 25 € Forfait de 5 cours : 110 € (22 € par cours) Forfait de 10 cours : 200 € (20 € par cours) Vous pouvez trouver tous les détails des prix et des formules dans la section [Plans et Tarifs]."
-        },
-        "question_9": {
-        "question": "Puis-je annuler ou reporter un cours ?",
-        "answer": "Bien sûr ! Je comprends que votre emploi du temps peut changer. Si vous devez annuler ou reporter un cours, il vous suffit de me prévenir au moins 24 heures à l'avance. Si vous ne le faites pas dans ce délai, le cours sera considéré comme dispensé."
-        },
-        "question_10": {
-        "question": "Comment s'effectue le paiement des cours ?",
-        "answer": "Le paiement peut être effectué par virement bancaire ou PayPal. Je vous fournirai les détails de paiement une fois votre réservation confirmée. Vous pouvez payer par cours ou acheter des forfaits de cours à un prix réduit."
-        },
-        "question_11": {
-        "question": "Fournissez-vous du matériel pour étudier entre les cours ?",
-        "answer": "Oui ! En plus des cours en direct, je vous fournirai du matériel d'étude personnalisé après chaque cours : exercices interactifs, listes de vocabulaire, ressources en ligne et recommandations de vidéos ou de podcasts en espagnol. Tout ce dont vous avez besoin pour continuer à apprendre entre les leçons."
-        },
-        "question_12": {
-        "question": "Dans quelle langue les cours sont-ils dispensés ?",
-        "answer": "Mes cours sont en espagnol dès le premier jour, mais si vous en avez besoin, je peux vous expliquer en français ou en anglais pour que vous compreniez mieux certains concepts difficiles. Mon objectif est que vous vous sentiez à l'aise tout en améliorant votre espagnol."
-        },
-        "question_13": {
-        "question": "Proposez-vous des cours spécialisés (affaires, tourisme, etc.) ?",
-        "answer": "Oui, je propose des cours d'espagnol spécialisés pour différents domaines professionnels, tels que le tourisme, les affaires, la médecine, et plus encore. Ces cours sont conçus pour vous aider à acquérir le vocabulaire et les expressions spécifiques dont vous avez besoin dans votre domaine de travail."
-        },
-        "question_14": {
-        "question": "Puis-je apprendre l'espagnol même si je ne vis pas en France ?",
-        "answer": "Bien sûr ! Mes cours sont 100% en ligne, ce qui signifie que vous pouvez les suivre depuis n'importe où dans le monde, à condition d'avoir une connexion internet. Bien que je me concentre principalement sur les étudiants francophones, j'enseigne également à des personnes d'autres pays."
-        },
-        "question_15": {
-        "question": "Puis-je apprendre l'espagnol pour voyager ?",
-        "answer": "Oui, je propose un cours spécifique pour les voyageurs qui souhaitent apprendre les phrases et le vocabulaire les plus utiles avant leur voyage dans un pays hispanophone. Vous apprendrez à communiquer dans les restaurants, les hôtels, les magasins et dans les situations courantes pendant le voyage."
-        },
-        "question_16": {
-        "question": "Comment puis-je améliorer mon espagnol en dehors des cours ?",
-        "answer": "En plus des cours, je vous recommande de pratiquer tous les jours en écoutant des podcasts en espagnol, en regardant des séries ou des films avec des sous-titres et en utilisant des applications comme Duolingo ou Memrise. Je vous fournirai également une liste de ressources supplémentaires pour que vous puissiez continuer à pratiquer et à vous améliorer par vous-même."
-        },
-        "question_17": {
-        "question": "Puis-je partager mes cours avec un ami ou un membre de ma famille ?",
-        "answer": "Si vous êtes intéressé par l'apprentissage avec une autre personne, je propose également l'option de cours en petit groupe (maximum 3 personnes). Cette option est idéale si vous et un ami ou un membre de votre famille avez un niveau d'espagnol similaire et souhaitez apprendre ensemble. Contactez-moi pour plus de détails sur les prix et l'organisation."
-        }
+    "question_2": {
+      "question": "Comment se déroulent les cours en ligne ?",
+      "answer": "Tous les cours sont dispensés sur des plateformes de visioconférence comme Zoom ou Google Meet. La seule chose dont vous avez besoin est une bonne connexion Internet et un appareil avec caméra et microphone (ordinateur, tablette ou smartphone). À la fin de chaque cours, vous recevrez du matériel de soutien et des exercices pour vous entraîner entre les séances."
     },
-    "closing": {
-      "final_question": "Avez-vous d'autres questions ?",
-      "contact_message": "Si vous n'avez pas trouvé la réponse à votre question, n'hésitez pas à me contacter.",
-      "email": "laodrope@yahoo.com",
-      "whatsapp": "+33 768524875",
-      "farewell": "Je suis là pour vous aider dans tout ce dont vous avez besoin."
+    "question_3": {
+      "question": "Offrez-vous un cours d'essai gratuit ?",
+      "answer": "Oui ! J'offre un premier cours d'essai gratuit de 30 minutes. Pendant cette séance, nous évaluerons votre niveau d'espagnol et définirons ensemble vos objectifs. Vous pourrez également découvrir mon style d'enseignement et me poser toutes les questions que vous avez avant de commencer le cours."
+    },
+    "question_4": {
+      "question": "Quelle est la durée de chaque cours ?",
+      "answer": "Chaque cours a une durée standard de 60 minutes, mais si vous préférez, je peux proposer des séances plus courtes (45 minutes) ou plus longues (90 minutes), selon votre disponibilité et vos préférences. Il vous suffit de me le faire savoir lors de la planification des cours."
+    },
+    "question_5": {
+      "question": "Quels niveaux d'espagnol enseignez-vous ?",
+      "answer": "J'enseigne aux étudiants de tous les niveaux, du débutant (A1) à l'avancé (C2). Voici une brève description : Débutant (A1 - A2) : Apprenez les bases, des salutations et du vocabulaire essentiel aux structures grammaticales simples. Intermédiaire (B1 - B2) : Améliorez votre aisance, apprenez à tenir des conversations sur des sujets quotidiens et commencez à utiliser des expressions plus complexes. Avancé (C1 - C2) : Perfectionnez votre espagnol pour parler naturellement dans des situations professionnelles ou académiques, ou si vous envisagez de vivre dans un pays hispanophone."
+    },
+    "question_6": {
+      "question": "Combien de temps faut-il pour parler espagnol couramment ?",
+      "answer": "Le temps nécessaire pour parler espagnol couramment dépend de plusieurs facteurs, tels que votre niveau actuel, la fréquence des cours et la quantité de pratique en dehors des séances. En général, les étudiants qui suivent des cours régulièrement (1 à 2 fois par semaine) et pratiquent entre les cours constatent généralement une nette amélioration en 3 à 6 mois."
     }
+  },
+  "pricing": {
+    "question_7": {
+      "question": "Combien coûtent les cours ?",
+      "answer": "Je propose plusieurs options selon vos besoins : Cours individuel de 60 minutes : 25€ Forfait de 5 cours : 110€ (22€ par cours) Forfait de 10 cours : 200€ (20€ par cours) Vous pouvez consulter tous les détails des prix et des forfaits dans la section [Plans et Tarifs]."
+    },
+    "question_8": {
+      "question": "Puis-je annuler ou reporter un cours ?",
+      "answer": "Bien sûr ! Je comprends que votre emploi du temps peut changer. Si vous devez annuler ou reporter un cours, il vous suffit de me prévenir au moins 24 heures à l'avance. Si vous ne le faites pas dans ce délai, le cours sera considéré comme dispensé."
+    },
+    "question_9": {
+      "question": "Comment s'effectue le paiement des cours ?",
+      "answer": "Le paiement peut être effectué par virement bancaire ou PayPal. Je vous fournirai les détails du paiement une fois votre réservation confirmée. Vous pouvez payer par cours ou acheter des forfaits de cours à prix réduit."
+    },
+    "question_10": {
+      "question": "Comment réserver un cours ?",
+      "answer": "Vous pouvez réserver un cours via mon [Formulaire de Contact], ou directement en cliquant sur le bouton \"Réservez votre cours\" sur la page principale. Vous pouvez également me contacter par e-mail ou WhatsApp pour convenir des détails et choisir l'horaire qui vous convient le mieux."
+    }
+  },
+  "feautures": {
+    "question_11": {
+      "question": "Dans quelle langue les cours sont-ils dispensés ?",
+      "answer": "Mes cours sont en espagnol dès le premier jour, mais si vous en avez besoin, je peux vous expliquer en français ou en anglais pour vous aider à mieux comprendre certains concepts difficiles. Mon objectif est que vous vous sentiez à l'aise tout en améliorant votre espagnol."
+    },
+    "question_12": {
+      "question": "Proposez-vous des cours spécialisés (affaires, tourisme, etc.) ?",
+      "answer": "Oui, je propose des cours spécialisés d'espagnol pour différents domaines professionnels, tels que le tourisme, les affaires, la médecine, et plus encore. Ces cours sont conçus pour vous aider à acquérir le vocabulaire et les expressions spécifiques dont vous avez besoin dans votre domaine de travail."
+    },
+    "question_13": {
+      "question": "Puis-je apprendre l'espagnol pour voyager ?",
+      "answer": "Oui, je propose un cours spécifique pour les voyageurs qui souhaitent apprendre les phrases et le vocabulaire les plus utiles avant leur voyage dans un pays hispanophone. Vous apprendrez à communiquer dans les restaurants, les hôtels, les magasins et dans les situations courantes pendant le voyage."
+    },
+    "question_14": {
+      "question": "Comment puis-je améliorer mon espagnol en dehors des cours ?",
+      "answer": "En plus des cours, je vous recommande de pratiquer tous les jours en écoutant des podcasts en espagnol, en regardant des séries ou des films sous-titrés et en utilisant des applications comme Duolingo ou Memrise. Je vous fournirai également une liste de ressources supplémentaires pour vous permettre de continuer à pratiquer et à vous améliorer par vous-même."
+    },
+    "question_15": {
+      "question": "Puis-je partager mes cours avec un ami ou un membre de ma famille ?",
+      "answer": "Si vous souhaitez apprendre avec une autre personne, je propose également l'option de cours en petit groupe (maximum 3 personnes). Cette option est idéale si vous et un ami ou un membre de votre famille avez un niveau d'espagnol similaire et souhaitez apprendre ensemble. Contactez-moi pour plus de détails sur les prix et l'organisation."
+    }
+  },
+  "closing": {
+    "final_question": "Avez-vous d'autres questions ?",
+    "contact_message": "Si vous n'avez pas trouvé la réponse à votre question, n'hésitez pas à me contacter.",
+    "email": "laodrope@yahoo.com",
+    "whatsapp": "+33 768524875",
+    "farewell": "Je suis là pour vous aider dans tout ce dont vous avez besoin."
   }
+}

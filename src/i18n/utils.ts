@@ -34,10 +34,6 @@ export const getFAQi18n = ({ currentLocale }: { currentLocale: string}) =>
   }
   
 export  function getLocalizedUrl( currentPath: string, targetLang: string ): string {
- 
-  console.log('currentPath', currentPath);
-  console.log('targetLang', targetLang);
-
   const pathSegments = currentPath.split('/').filter(Boolean);
   var newPath;
     // Si el primer segmento es un idioma soportado, lo eliminamos
@@ -48,14 +44,11 @@ export  function getLocalizedUrl( currentPath: string, targetLang: string ): str
     // Si el idioma objetivo es el predeterminado, no agregamos prefijo
   if (targetLang === defaultLang) {
       newPath = '/' + pathSegments.join('/');
-      console.log('===> newPath', newPath);
       return newPath;
     }
   
   // Para otros idiomas, agregamos el prefijo del idioma
    newPath = '/' + targetLang + '/' + pathSegments.join('/');
-  console.log('newPath', newPath);
-
   return newPath;  
 }
   

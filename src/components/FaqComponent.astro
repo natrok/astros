@@ -8,7 +8,19 @@ import {useNavigationTranslations} from "../i18n/utils";
 import {getFAQi18n} from "../i18n/utils"; // Import the i18n function to 
 const {currentLocale = 'es'} = Astro;
 const translations = getFAQi18n({currentLocale}); // Get the translations
+
+// Subsection questions
 const questions = Object.values(translations.questions);
+const pricing = Object.values(translations.pricing);
+const features = Object.values(translations.feautures);
+
+// Subsection titles
+const sections = Object.values(translations.sections).map(section => 
+  typeof section === 'string' ? { title: section } : section
+);
+// const sections = Object.values(translations.sections);
+
+
 
 const navTranslations = useNavigationTranslations(currentLocale as "es" | "en" | "fr"); // Get the translations for the contact page
 const contact = navTranslations("contact");; // Get the translations for the contact page
@@ -23,33 +35,78 @@ const contact = navTranslations("contact");; // Get the translations for the con
     <main>
         <section class="py-16 bg-white dark:bg-gray-800">
             <div class="container-custom">
-            <div class="max-w-4xl mx-auto">
-                <div id="general" class="mb-16">
-                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
-                    <span class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3">
-                        <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </span>
-                    {translations.introduction.title}      
-                </h2>
-
-                      
-                {questions.map((question, index) => (
-                    <div class="space-y-6">
-                            <div class="card p-6 border mb-8 mx-1 border-gray-200 dark:border-gray-700" onclick="this.classList.toggle('open')">
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{question.question}
-      
-                                </h3>
-                                
-                                <p class="card-content text-gray-600 dark:text-gray-300 ">
-                                    {question.answer}
-                                </p>
-                            </div>
-                        </div>
+            
+            <!-- FAQ Categories Navigation -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                {sections.map((section,index) => (
+                     <a href=`#section${index}` class="px-4 py-2 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-400 font-medium text-sm hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors">
+                        {section.title}
+                    </a>
                 ))}
-                </div>
             </div>
+            
+                <div class="max-w-4xl mx-auto">
+                    <div id="section0" class="mb-16">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
+                        <span class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3">
+                            <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </span>
+                        {translations.introduction.title}      
+                    </h2>
+                    {questions.map((question) => (
+                        <div class="space-y-6">
+                                <div class="card p-6 border mb-8 mx-1 border-gray-200 dark:border-gray-700" onclick="this.classList.toggle('open')">
+                                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{question.question}</h3>
+                                    <p class="card-content text-gray-600 dark:text-gray-300 ">
+                                        {question.answer}
+                                    </p>
+                                </div>
+                            </div>
+                    ))}
+                    </div>
+                    <div id="section1" class="mb-16">
+                        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
+                            <span class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3">
+                                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </span>
+                            {translations.sections.section_2}      
+                        </h2>
+                        {pricing.map((question) => (
+                            <div class="space-y-6">
+                                    <div class="card p-6 border mb-8 mx-1 border-gray-200 dark:border-gray-700" onclick="this.classList.toggle('open')">
+                                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{question.question}</h3>
+                                        <p class="card-content text-gray-600 dark:text-gray-300 ">
+                                            {question.answer}
+                                        </p>
+                                    </div>
+                                </div>
+                        ))}
+                        </div>
+                        <div id="section2" class="mb-16">
+                            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
+                                <span class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3">
+                                    <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </span>
+                                {translations.sections.section_3}      
+                            </h2>
+                            {features.map((question) => (
+                                <div class="space-y-6">
+                                        <div class="card p-6 border mb-8 mx-1 border-gray-200 dark:border-gray-700" onclick="this.classList.toggle('open')">
+                                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{question.question}</h3>
+                                            <p class="card-content text-gray-600 dark:text-gray-300 ">
+                                                {question.answer}
+                                            </p>
+                                        </div>
+                                    </div>
+                            ))}
+                            </div>
+                </div>
             </div>
             <div class="text-center mt-16">
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">{translations.closing.final_question}</h3>
