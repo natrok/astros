@@ -49,8 +49,8 @@ try {
     //     status: 500,
   //   });
       const response = await resend.emails.send({
-      from: 'Espanol con Lady <onboarding@resend.dev>',
-      to: 'diegorok3@yahoo.es',
+      from: 'Espanol con Lady <noreply@aprender.labotaviajera.com>',
+      to: 'profelady@aprender.labotaviajera.com',
       subject: `Nuevo mensaje para la profe lady de ${name}`,
       html: `
         <h3>Nuevo mensaje desde el sitio web</h3>
