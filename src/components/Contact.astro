@@ -11,7 +11,7 @@
         <p class="text-gray-600 dark:text-gray-300 mb-8">
           Have questions about our platform or need help getting started? Our team is here to assist you every step of the way.
         </p>
-        
+
         <div class="space-y-6">
           <div class="flex items-start">
             <div class="flex-shrink-0 mt-1">
@@ -82,7 +82,7 @@
         <div class="card p-6 border border-gray-200 dark:border-gray-700">
           <h3 class="text-xl font-semibold mb-6 text-gray-900 dark:text-white">Send Us a Message</h3>
           
-          <form x-data="{ name: '', email: '', message: '', submitted: false, errors: {} }">
+          <form x-data="contactForm()">
             <div class="mb-4">
               <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
               <input 
@@ -118,28 +118,19 @@
               ></textarea>
               <p class="text-red-500 text-sm mt-1" x-show="errors.message" x-text="errors.message"></p>
             </div>
-            
-            <div x-show="!submitted">
+                        
+            <div x-show="!success">
               <button 
                 type="submit" 
                 class="w-full btn-primary"
-                x-on:click.prevent="
-                  errors = {};
-                  if (!name) errors.name = 'Please enter your name';
-                  if (!email) errors.email = 'Please enter your email';
-                  else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.email = 'Please enter a valid email';
-                  if (!message) errors.message = 'Please enter your message';
-                  
-                  if (Object.keys(errors).length === 0) {
-                    submitted = true;
-                  }
-                "
+                x-on:click.prevent="submitForm()"
               >
-                Send Message
+                  <span x-show="!loading">Enviar</span>
+                  <span x-show="loading">Enviando...</span>
               </button>
             </div>
-            
-            <div class="text-center p-6 bg-primary-50 dark:bg-primary-900/30 rounded-lg" x-show="submitted" x-cloak>
+            <template x-if="success"><p class="text-green-500 mt-2">Mensaje enviado con éxito.</p></template>
+            <div class="text-center p-6 bg-primary-50 dark:bg-primary-900/30 rounded-lg" x-show="success" x-cloak>
               <svg class="w-12 h-12 text-primary-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
@@ -154,3 +145,12 @@
     </div>
   </div>
 </section>
+    <script>
+      // Es importante que Alpine.js esté disponible antes de que esto se ejecute.
+    import Alpine from 'alpinejs';
+    import { contactForm } from '../scripts/email.js';
+    // El evento 'alpine:init' asegura que Alpine esté listo.
+    document.addEventListener('alpine:init', () => {
+      Alpine.data('contactForm', contactForm); // Registra la lógica con el nombre 'contactForm'
+    });
+  </script>
