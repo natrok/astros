@@ -1,15 +1,28 @@
 ---
+import {geti18n} from "../i18n/utils"; // Import the i18n function to 
+const {currentLocale = 'es'} = Astro;
+const translations = geti18n({currentLocale}); 
+
+import {getLangFromUrl} from "../i18n/utils";
+import { defaultLang } from '../i18n/indexui';
+const lang = getLangFromUrl(Astro.url) || defaultLang;
+const prefix = lang === "es"  ? "/" : `/${lang}/`;
+
+const buttonText = translations.hero.cta;
+import ActionButton from "./ActionButton.astro";
 ---
 <section id="contact" class="section bg-gray-50 dark:bg-gray-800/50">
   <div class="container-custom">
     <div class="grid md:grid-cols-2 gap-12">
       <div class="slide-up">
-        <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
-          Get In Touch
-        </span>
-        <h2 class="mb-6 text-gray-900 dark:text-white">We'd Love to Hear From You</h2>
+        <h2 class="mb-6 text-gray-900 dark:text-white">{translations.contact.GetInTouch.title}</h2>
         <p class="text-gray-600 dark:text-gray-300 mb-8">
-          Have questions about our platform or need help getting started? Our team is here to assist you every step of the way.
+          {translations.contact.GetInTouch.description1}
+          <a href=`${prefix}faq` class="text-red-600" >(FAQ)</a>
+        </p>
+          
+        <p class="text-gray-600 dark:text-gray-300 mb-8">
+          {translations.contact.GetInTouch.description2}
         </p>
 
         <div class="space-y-6">
@@ -20,8 +33,8 @@
               </svg>
             </div>
             <div class="ml-4">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Email Us</h3>
-              <p class="text-gray-600 dark:text-gray-300">support@saasify.com</p>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{translations.contact.GetInTouch.email}</h3>
+              <p class="text-gray-600 dark:text-gray-300">laodrope@gmail.com</p>
             </div>
           </div>
           
@@ -32,12 +45,12 @@
               </svg>
             </div>
             <div class="ml-4">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Call Us</h3>
-              <p class="text-gray-600 dark:text-gray-300">+1 (555) 123-4567</p>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{translations.contact.GetInTouch.phone}</h3>
+              <p class="text-gray-600 dark:text-gray-300">+33 0768524875</p>
             </div>
           </div>
           
-          <div class="flex items-start">
+          <!-- <div class="flex items-start">
             <div class="flex-shrink-0 mt-1">
               <svg class="w-6 h-6 text-secondary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
@@ -48,11 +61,11 @@
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Visit Us</h3>
               <p class="text-gray-600 dark:text-gray-300">123 SaaS Street, Tech City, TC 12345</p>
             </div>
-          </div>
+          </div> -->
         </div>
         
         <div class="mt-8">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Follow Us</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">{translations.contact.GetInTouch.network}</h3>
           <div class="flex space-x-4">
             <a href="#" class="text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors" aria-label="Twitter">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -80,11 +93,11 @@
       
       <div class="slide-up" style="animation-delay: 150ms">
         <div class="card p-6 border border-gray-200 dark:border-gray-700">
-          <h3 class="text-xl font-semibold mb-6 text-gray-900 dark:text-white">Send Us a Message</h3>
+          <h3 class="text-xl font-semibold mb-6 text-gray-900 dark:text-white">{translations.contact.Form.title}</h3>
           
           <form x-data="contactForm()">
             <div class="mb-4">
-              <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
+              <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{translations.contact.Form.name}</label>
               <input 
                 type="text" 
                 id="name" 
@@ -96,7 +109,7 @@
             </div>
             
             <div class="mb-4">
-              <label for="contact-email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+              <label for="contact-email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{translations.contact.Form.email}</label>
               <input 
                 type="email" 
                 id="contact-email" 
@@ -108,7 +121,7 @@
             </div>
             
             <div class="mb-6">
-              <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
+              <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{translations.contact.Form.message}</label>
               <textarea 
                 id="message" 
                 x-model="message"
@@ -125,8 +138,8 @@
                 class="w-full btn-primary"
                 x-on:click.prevent="submitForm()"
               >
-                  <span x-show="!loading">Enviar</span>
-                  <span x-show="loading">Enviando...</span>
+                  <span x-show="!loading">{translations.contact.Form.send}</span>
+                  <span x-show="loading">Enviando... :)</span>
               </button>
             </div>
             <template x-if="success"><p class="text-green-500 mt-2">Mensaje enviado con éxito.</p></template>
@@ -134,9 +147,9 @@
               <svg class="w-12 h-12 text-primary-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Message Sent!</h3>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Mensaje enviado!</h3>
               <p class="text-gray-600 dark:text-gray-300">
-                Thank you for reaching out. We'll get back to you as soon as possible.
+                {translations.contact.Form.success}
               </p>
             </div>
           </form>
@@ -144,6 +157,7 @@
       </div>
     </div>
   </div>
+    <ActionButton text={buttonText} url='' />
 </section>
     <script>
       // Es importante que Alpine.js esté disponible antes de que esto se ejecute.

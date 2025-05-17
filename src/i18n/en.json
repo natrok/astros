@@ -57,5 +57,26 @@
         "title": "Are You Ready to Speak Spanish with Confidence?",
         "subtitle": "You can have a 30-minute trial class with me, no strings attached.",
         "description": "Join many satisfied students who have achieved their goals with my Spanish classes."
+    },
+    "contact": {
+        "title": "Contact me today ",
+        "highlightText": "start learning Spanish!",
+        "description": "¡Don't hesitate to contact me! I will be happy to assist you.",
+        "GetInTouch": {
+            "title": "Let's Talk!",
+            "description1": "Do you have questions? Do you want more information? I'm here to help! I invite you to check out my FAQ page, where you'll find detailed information about how the classes work, the levels I teach, pricing, and more.",
+            "description2": "If you prefer, fill out the form, and I will get in touch with you as soon as possible. You can also contact me directly through the following means.",
+            "email": "Email",
+            "phone": "Phone",
+            "network": "Follow me"
+        },
+        "Form": {
+            "title": "Send me a message",
+            "name": "Name",
+            "message": "Menssage",
+            "email": "Email",
+            "send": "Send",
+            "success": "Thank you for contacting me. I'll get back to you as soon as possible."
+       }
     }
 }

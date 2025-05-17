@@ -58,5 +58,26 @@
       "title": "¿Estás listo para hablar español con confianza?",
       "subtitle": "Puedes hacer una clase de prueba conmigo de 30 minutos sin compromiso.",
       "description": "Únete a muchos estudiantes satisfechos que han alcanzados sus objetivos con mis clases de español"
+    },
+    "contact": {
+      "title": "Contáctame hoy ",
+      "highlightText": "¡comienza a aprender español!",
+      "description": "¡No dudes en contactarme! Estaré encantada de responderte.",
+      "GetInTouch": {
+        "title": "¡Hablemos!",
+        "description1": "¿Tienes preguntas? ¿Quieres más información? ¡Estoy aquí para ayudarte!, te invito a revisar mi página de preguntas frecuentes, donde encontrarás información detallada sobre el funcionamiento de las clases, los niveles que imparto, los precios y más.",
+        "description2": "Si lo prefieres completa el formulario y me pondré en contacto contigo lo antes posible o tambien puedes contactarme directamente a través de los siguientes medios.",
+        "email": "Correo Electrónico",
+        "phone": "Teléfono",
+        "network": "Sigueme"
+      },
+      "Form": {
+        "title": "Envíame un mensaje",
+        "name": "Nombre",
+        "message": "Mensaje",
+        "email": "Email",
+        "send": "Enviar",
+        "success": "Gracias por contactarme. Me pondré en contacto contigo lo antes posible."
+       }
     }
   }

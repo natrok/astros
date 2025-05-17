@@ -49,11 +49,11 @@ try {
     //     status: 500,
   //   });
       const response = await resend.emails.send({
-      from: 'Espanol con Lady <noreply@aprender.labotaviajera.com>',
+      from: '🧑🏻‍🎓Espanol con Lady <noreply@aprender.labotaviajera.com>',
       to: 'profelady@aprender.labotaviajera.com',
-      subject: `Nuevo mensaje para la profe lady de ${name}`,
+      subject: `EspanolConLady - mensaje para lady de ${name}`,
       html: `
-        <h3>Nuevo mensaje desde el sitio web</h3>
+        <h3>⚠️ Nuevo mensaje desde tu sitio web ⚠️</h3>
         <p><strong>Nombre:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Mensaje:</strong><br>${message}</p>

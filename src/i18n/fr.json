@@ -57,5 +57,26 @@
         "title": "Êtes-vous prêt à parler espagnol avec confiance ?",
         "subtitle": "Vous pouvez faire un cours d'essai de 30 minutes avec moi, sans engagement.",
         "description": "Rejoignez de nombreux étudiants satisfaits qui ont atteint leurs objectifs avec mes cours d'espagnol."
+    },
+    "contact": {
+        "title": "Contactez-moi aujourd'hui ",
+        "highlightText": "commencez à apprendre l'espagnol !",
+        "description": "¡N'hésitez pas à me contacter! Je serai ravie de vous répondre.",
+        "GetInTouch": {
+            "title": "!Entrons en contact!",
+            "description1": "Vous avez des questions ? Vous souhaitez plus d'informations ? Je suis là pour vous aider ! Je vous invite à consulter ma page FAQ, où vous trouverez des informations détaillées sur le fonctionnement des cours, les niveaux que j'enseigne, les tarifs, et bien plus encore.",
+            "description2": "Si vous préférez, remplissez le formulaire, et je vous contacterai dès que possible. Vous pouvez également me contacter directement par les moyens suivants.",
+            "email": "Email",
+            "phone": "Téléphone",
+            "network": "Suivez-moi sur mes réseaux sociaux"
+        },
+        "Form": {
+            "title": "Envoyez-moi un message",
+            "name": "Nom",
+            "message": "Message",
+            "email": "Email",
+            "send": "Envoyer",
+            "success": "Merci de m'avoir contacté. Je vous répondrai dans les plus brefs délais."
+        }
     }
 }
