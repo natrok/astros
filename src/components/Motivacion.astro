@@ -1,5 +1,9 @@
 ---
-import {geti18n} from "../i18n/utils"; // Import the i18n function to 
+import {geti18n,getLangFromUrl} from "../i18n/utils"; // Import the i18n function to 
+import { defaultLang } from '../i18n/indexui';
+const lang = getLangFromUrl(Astro.url) || defaultLang;
+const prefix = lang === "es"  ? "/" : `/${lang}/`;
+
 const {currentLocale = 'es'} = Astro;
 const translations = geti18n({currentLocale}); 
 
@@ -12,7 +16,8 @@ const razones = translations.motivacion.features.map((element) => {
 }); 
 
 const buttonText = translations.hero.cta;
-const path = '/contact';
+
+const path = `${prefix}reservation`;
 
 import ActionButton from "./ActionButton.astro";
 

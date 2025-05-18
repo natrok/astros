@@ -1,12 +1,13 @@
 ---
-import {geti18n} from "../i18n/utils"; // Import the i18n function to 
+import {geti18n, getLangFromUrl} from "../i18n/utils"; // Import the i18n function to 
 const {currentLocale = 'es'} = Astro;
 const translations = geti18n({currentLocale}); 
 
-import {getLangFromUrl} from "../i18n/utils";
 import { defaultLang } from '../i18n/indexui';
 const lang = getLangFromUrl(Astro.url) || defaultLang;
 const prefix = lang === "es"  ? "/" : `/${lang}/`;
+const path = `${prefix}reservation`
+
 
 const buttonText = translations.hero.cta;
 import ActionButton from "./ActionButton.astro";
@@ -162,7 +163,7 @@ import ActionButton from "./ActionButton.astro";
          </p>
     </div>
   </div>  
-  <ActionButton text={buttonText} url='' />
+  <ActionButton text={buttonText} url={path} />
 </section>
     <script>
       // Es importante que Alpine.js esté disponible antes de que esto se ejecute.

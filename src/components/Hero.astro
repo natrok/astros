@@ -1,7 +1,11 @@
 ---
 import HeroSection from "./HeroSection.astro";
+import {geti18n, getLangFromUrl} from "../i18n/utils"; // Import the i18n function to 
 
-import {geti18n} from "../i18n/utils"; // Import the i18n function to 
+import { defaultLang } from '../i18n/indexui';
+const lang = getLangFromUrl(Astro.url) || defaultLang;
+const prefix = lang === "es"  ? "/" : `/${lang}/`;
+
 const {currentLocale = 'es'} = Astro;
 const translations = geti18n({currentLocale}); // Get the translations
 const heroDescription = {
@@ -17,7 +21,7 @@ const heroDescription = {
   <h2 class="mb-8">{translations.hero.headline}</h2>
   <p class="mb-2 text-xl">{translations.hero.subheadline}. </p>
   <p class=" mb-2 text-xl">{translations.hero.subheadline2}</b></p>
-  <a href="/contact" class="btn-secondary mt-10 hover:scale-125 transition-transform duration-300 ease-in">
+  <a href= `${prefix}reservation` class="btn-secondary mt-10 hover:scale-125 transition-transform duration-300 ease-in">
     {translations.hero.cta}
   </a>
 </section>

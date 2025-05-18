@@ -4,6 +4,7 @@ import Header from '../../components/Header.astro';
 
 import Footer from '../../components/Footer.astro';
 import HeroSection from '../../components/HeroSection.astro';
+import Reservations from '../../components/ReservationComponent.astro';
 
 import {geti18n} from "../../i18n/utils"; // Import the i18n function to 
 const {currentLocale = 'es'} = Astro;
@@ -26,6 +27,7 @@ export function getStaticPaths() {
       highlightText={translations.contact.highlightText} 
       description={translations.contact.description} 
       />
+      <Reservations />
   </main>
   <Footer />
 </Layout> 
