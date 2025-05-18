@@ -1,0 +1,30 @@
+---
+---
+<section id="contact" class="section bg-gray-50 dark:bg-gray-800/50">
+  
+  <calendly-widget>
+    <div class="calendly-inline-widget" data-url="https://calendly.com/laodrope?primary_color=ff00f6" style="min-width:320px;height:1000px;">
+    </div>
+  </calendly-widget>
+</section>
+
+ <script>
+  // Dynamically load the Calendly widget script
+  class Calendly  extends HTMLElement {
+    constructor() {
+      super();
+      this.init();
+    }
+  
+    init() {
+      if (!document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]')){
+      const script = document.createElement('script');
+      script.src = "https://assets.calendly.com/assets/external/widget.js";
+      script.async = true;
+      script.type = "text/javascript";
+      document.body.appendChild(script);
+      }
+    }
+  }
+  customElements.define('calendly-widget', Calendly);
+</script>

@@ -4,19 +4,19 @@ import Navigation from "./Navigation.astro";
 import NavigationMobile from "./NavigationMobile.astro";
 import {useNavigationTranslations, getLangFromUrl, getLocalizedUrl} from "../i18n/utils";
 
-import { defaultLang } from '../i18n/indexui';
 
 import "../styles/header.css";
 
 const title = "Español Con Lady";
+import { defaultLang } from '../i18n/indexui';
 const lang = getLangFromUrl(Astro.url) || defaultLang;
-const translations = useNavigationTranslations(lang);
 const prefix = lang === "es"  ? "/" : `/${lang}/`;
 
+const translations = useNavigationTranslations(lang);
 const headerPages = [
   { text: translations("nav.home"), url:  `${prefix}`},
-  { text: translations("nav.reservation"), url: `${prefix}contact`},
-  { text: translations("nav.class"), url: `${prefix}features` },
+  { text: translations("nav.reservation"), url: `${prefix}reservation`},
+  { text: translations("nav.class"), url: `${prefix}pricing` },
   { text: translations("nav.about"), url: `${prefix}about` },
   { text: translations("nav.faq"), url: `${prefix}faq` },  
 ];
@@ -25,7 +25,7 @@ const contact = translations("contact");
 
 const languagesFlags = [
   { lang: "es", src: "https://flagcdn.com/es.svg" },
-  { lang: "en", src: "https://flagcdn.com/us.svg" },
+  { lang: "en", src: "https://flagcdn.com/gb.svg" },
   { lang: "fr", src: "https://flagcdn.com/fr.svg" },
 ];
 
@@ -96,7 +96,7 @@ const visibleLanguagesFlags = languagesFlags.filter(
             class="w-6 h-6 rounded-full overflow-hidden"
             aria-label={`Change language to ${flag.lang}`}
           >
-            <img src={flag.src} alt={flag.lang} class="w-full h-full" />
+            <img  class="w-full h-full" src={flag.src} alt={flag.lang} />
           </a>
         ))}
       </div>
