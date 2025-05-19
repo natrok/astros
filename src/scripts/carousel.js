@@ -9,7 +9,7 @@ function test({texto}) {
   }
 }
 
-function carousel(parametros) {
+export function carousel(parametros) {
   if (parametros === null) {
      throw new TypeError('Expected an object');
   }
@@ -31,4 +31,3 @@ function carousel(parametros) {
 }
 // Hacerlo global para que Alpine pueda acceder
 window.carousel = carousel;
-window.test = test;

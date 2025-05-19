@@ -40,3 +40,10 @@
   .carousel-btn:hover {
     background-color: rgba(219, 234, 255, 0.5);
   }
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
