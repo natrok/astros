@@ -29,7 +29,7 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: my-deno-project # TODO: replace with Deno Deploy project name
+          project: espanolconlady # TODO: replace with Deno Deploy project name
           entrypoint: dist/server/entry.mjs
         
           
