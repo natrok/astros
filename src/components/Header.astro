@@ -18,11 +18,16 @@ const headerPages = [
   { text: translations("nav.reservation"), url: `${prefix}reservation`},
   { text: translations("nav.class"), url: `${prefix}pricing` },
   { text: translations("nav.about"), url: `${prefix}about` },
-  { text: translations("nav.faq"), url: `${prefix}faq` },  
-  { text: translations("nav.faq"), url: `${prefix}contact`},  
+  { text: translations("nav.faq"), url: `${prefix}faq` } 
 ];
 
-const contact = translations("contact");
+const headerPagesMobile = headerPages;
+headerPagesMobile.push({
+  text: translations("nav.contact"),
+  url: `${prefix}contact`,
+});
+
+const contact = translations("nav.contact");
 
 const languagesFlags = [
   { lang: "es", src: "https://flagcdn.com/es.svg" },
@@ -105,7 +110,7 @@ const visibleLanguagesFlags = languagesFlags.filter(
         >{contact}</a
       >
 
-      <NavigationMobile menuItems={headerPages} />
+      <NavigationMobile menuItems={headerPagesMobile} />
     </div>
   </div>
 </header>

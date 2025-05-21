@@ -14,7 +14,7 @@ export const header = {
         'nav.reservation': 'Reservar',
         'nav.class': 'Clases Privadas',
         'nav.faq': 'FAQ',
-        'contact': 'Contáctame',
+        'nav.contact': 'Contáctame',
       },
     en: {
       'title': 'Spanish with Lady - Learn Spanish in a Fun and Effective Way',
@@ -23,7 +23,7 @@ export const header = {
       'nav.reservation': 'Reservation',
       'nav.class': 'Private Classes',  
       'nav.faq': 'FAQ',
-      'contact': 'Contact me',
+      'nav.contact': 'Contact me',
   },
     fr: {
         'title': 'Español con Lady - Apprenez l\'espagnol de manière amusante et efficace',
@@ -32,7 +32,7 @@ export const header = {
         'nav.reservation': 'Réservation',
         'nav.class': 'Cours privés',
         'nav.faq': 'FAQ',
-        'contact': 'Contactez-moi',
+        'nav.contact': 'Contactez-moi',
     },
 } as const;
   
